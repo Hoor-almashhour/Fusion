@@ -1,0 +1,34 @@
+{
+  "navbar": {
+      "home": "Home",
+    "steps": "Steps to Study Abroad",
+    "country": "Countries",
+    "universities": "Universities",
+    "packages": "Fusion Packages",
+    "news": "News & Articles",
+    "about": "Who We Are",
+    "contact": "Contact Us",
+    "register": "Register Now",
+    "partner": "Be Our Partner"
+
+  },
+  "hero": {
+    "title": "Get your university admission in Turkey",
+    "subtitle": "Don't miss ",
+    "word": "the opportunity!",
+    "description":"Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admission and visa procedures.",
+    "btn1":"Universities",
+    "btn2": "Contact us"
+  },
+  "search": {
+    "title": "Find Specitaly",
+    "subtitle": ".Use our advanced search engine to find the right match for you",
+    "degree": "Degree",
+    "language": "Language",
+    "major": "Specitaly",
+    "universities": "Universities",
+    "placeholder": " ... Search for",
+    "btnSearch": "Search",
+    "btnAdvanced": "Advanced"
+  }
+}
