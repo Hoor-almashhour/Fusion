@@ -1,21 +1,22 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import Hero from "../component/Hero/Hero";
-import Navbar from "../component/Navbar/Navbar";
-import SearchSection from "../component/SearchSection/SearchSection";
 
 
-export default async function Home({
-  params,
-}: {
-  params: { locale: string };
-}) {
-  const locale = params.locale;
+import Navbar from '@/app/component/Navbar/Navbar';
+import Hero from '@/app/component/Hero/Hero';
+import SearchSection from '@/app/component/SearchSection/SearchSection';
+import WhyChooseFus from '../component/WhyChooseFus/WhyChooseFus';
+import UniversitiesSlider from '../component/UniversitiesSlider/UniversitiesSlider';
+
+
+
+export default  function HomePage() {
 
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
-      <SearchSection/>
-    </div>
+      <SearchSection />
+      <WhyChooseFus/>
+      <UniversitiesSlider />
+    </>
   );
 }

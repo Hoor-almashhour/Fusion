@@ -1,10 +1,12 @@
-'use client'
+'use client';
+
 import React from 'react'
 import Image from 'next/image';
 import { FaInfo } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa6';
 import { useTranslations } from 'next-intl';
-const  Hero = () => {
+
+const  Hero = () =>{
     const t = useTranslations('hero')
   return (
     <div className="bg-gray-50  text-primary font-sans ">
@@ -13,7 +15,7 @@ const  Hero = () => {
         ">
         {/* Image of the student */}
         <div className="md:w-1/2  flex justify-center  md:mb-0">
-          <Image src="/Hero/heroImg.png" alt="Student"width={440} height={400} className="w-full md:max-w-[440px] h-auto" />
+          <Image src="/Hero/heroImg.png" alt="Student"width={440} height={300} style={{ height: "auto", width: "auto"  }} priority/>
         </div>
 
         {/* Text Content */}

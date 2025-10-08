@@ -8,6 +8,8 @@ import { IoChevronDown } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { useTranslations } from 'next-intl';
 
+
+
 const Navbar = () => {
    const pathname = usePathname();
    const [menuOpen, setMenuOpen] = useState(false);

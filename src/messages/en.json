@@ -30,5 +30,38 @@
     "placeholder": " ... Search for",
     "btnSearch": "Search",
     "btnAdvanced": "Advanced"
+  },
+  
+  "whyChoose": {
+    "title": "Why Choose Fusion for University Admission in Turkey?",
+    "subtitle": "4 reasons to choose Fusion",
+    "reasons": [
+      {
+        "title": "Free University Admission",
+        "description": "We help students get accepted to the right university with affordable tuition fees and full support."
+      },
+      {
+        "title": "Professional Team",
+        "description": "A leading company in educational services since 2015, helping students study in Turkey."
+      },
+      {
+        "title": "Free Consultation",
+        "description": "We help you choose your major with the guidance of expert consultants."
+      },
+      {
+        "title": "Exclusive Discounts",
+        "description": "We offer university discounts up to 70% off tuition fees."
+      }
+    ]
+  },
+  "universities": {
+    "title": "Our Universities",
+    "subtitle": "Top universities in Turkey and Northern Cyprus",
+    "moreBtn": "Discover More Universities",
+    "details": "More...",
+    "register": "Register Now"
   }
 }
+
+
+
