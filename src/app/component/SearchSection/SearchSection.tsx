@@ -43,7 +43,7 @@ export default function SearchSection() {
         <div className="flex flex-col md:flex-row gap-2">
           <input
             type="text"
-            placeholder="بحث عن ..."
+            placeholder="...بحث عن "
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 border rounded p-2 text-right text-gray-700 border-gray-600"
