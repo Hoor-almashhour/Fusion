@@ -1,22 +1,28 @@
-import './globals.css';
-import { ReactNode } from 'react';
-import { routing, Locale } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
- 
- 
+import Navbar from './component/Navbar/Navbar'
 
 
-  
-  return (
-    <html lang="ar">
-      <body>{children}</body>
-    </html>
-  );
+
+
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'Fusion',
+  description: 'Online Learning Platform',
 }
 
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+    
+           <Navbar />
+            {children}
+      </body>
+    </html>
+  )
+}

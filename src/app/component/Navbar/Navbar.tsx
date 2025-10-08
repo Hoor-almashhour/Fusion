@@ -106,10 +106,10 @@ const Navbar = () => {
               </button>
             </div>
 
-            <ul className="flex flex-col font-semibold text-white text-lg px-4">
+            <ul className="flex flex-col  items-center font-semibold text-white text-lg px-4">
               {links.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} onClick={() => setMenuOpen(false)} className="px-6 py-5 flex justify-between items-center">
+                  <Link href={link.href} onClick={() => setMenuOpen(false)} className="px-4 py-4 flex justify-between items-center">
                     {link.label}
                     {link.icon && <span>{link.icon}</span>}
                   </Link>
@@ -118,14 +118,13 @@ const Navbar = () => {
             </ul>
 
             {/* روابط اللغة */}
-            <div className="flex flex-col items-start gap-4 px-9 mt-2">
+            <div className="flex flex-col  items-center gap-4 px-9 mt-2">
               <span className="text-white text-lg">Arabic (العربية)</span>
-              <span className="text-white text-lg">Türkçe (التركية)</span>
               <span className="text-white text-lg">English (الإنجليزية)</span>
             </div>
 
             {/* Socials */}
-            <div className="pt-6 flex flex-row items-start gap-4 px-9 mb-6">
+            <div className="pt-6 flex flex-row justify-center gap-4 px-9 mb-6">
               <Link href="https://facebook.com" className="text-white text-lg">
                 <FaFacebookF />
               </Link>
@@ -136,10 +135,12 @@ const Navbar = () => {
                 <FaTiktok />
               </Link>
             </div>
-
-            <Link href="#" className="text-primary text-center py-2 mx-9 w-[170px] bg-white rounded-full font-bold">
-              سجل الآن
-            </Link>
+              <div className='text-center  my-9'>
+                 <Link href="https://wa.me/905318598487" className="text-center py-2 px-14 bg-white rounded-full font-bold">
+                  سجل الآن
+                </Link>
+              </div>
+           
           </div>
         )}
       </nav>
