@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fusion',
-  description: 'Online Learning Platform',
+  description: 'An integrated platform to support international students applying to Turkish Universities',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
