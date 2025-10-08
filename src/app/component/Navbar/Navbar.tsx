@@ -59,8 +59,8 @@ const Navbar = () => {
         <div className="sm:px-6 lg:px-8">
           <div className="flex justify-between items-center md:h-[140px] px-5">
             {/* Logo */}
-            <div className="md:flex-shrink-0">
-              <Image src="/Logo/Logo.jpg" alt="FUSION logo" width={60} height={50} className="w-auto" />
+            <div className="flex-shrink-0">
+              <Image src="/Logo/Logo.jpg" alt="FUSION logo" width={60} height={50} className="w-auto h-auto" />
             </div>
 
             {/* Desktop Menu */}
