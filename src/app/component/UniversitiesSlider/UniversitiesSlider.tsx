@@ -4,15 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
 
-type University = {
-  name: string;
-  city: string;
-  logo: string;
-};
-
-const universities: University[] = [
+const universities = [
   { name: "جامعة كولتور", city: "Istanbul", logo: "/logos/Kultur.png" },
   { name: "جامعة تيد", city: "Ankara", logo: "/logos/Ted.webp" },
   { name: "جامعة اسطنبول التجارية", city: "Istanbul", logo: "/logos/tic.avif" },
@@ -22,8 +15,6 @@ const universities: University[] = [
 ];
 
 export default function UniversitiesSlider() {
-  const t = useTranslations("universities");
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -36,8 +27,8 @@ export default function UniversitiesSlider() {
 
   return (
     <section className="w-full bg-white py-10 flex flex-col items-center text-center">
-      <h2 className="text-3xl font-bold text-[#B10B0B] mb-2">{t("title")}</h2>
-      <p className="text-gray-600 mb-8">{t("subtitle")}</p>
+      <h2 className="text-3xl font-bold text-[#B10B0B] mb-2">جامعاتنا</h2>
+      <p className="text-gray-600 mb-8">أهم الجامعات في تركيا وشمال قبرص التركية</p>
 
       <div className="relative w-full max-w-6xl overflow-hidden px-6">
         {/* أزرار التنقل */}
@@ -50,9 +41,7 @@ export default function UniversitiesSlider() {
 
         <div
           className="flex transition-transform duration-[800ms] ease-in-out"
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {universities.map((u, index) => (
             <div
@@ -75,13 +64,13 @@ export default function UniversitiesSlider() {
                     href="#"
                     className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-lg hover:bg-[#f77b2b] transition"
                   >
-                    {t("details")}
+                    المزيد...
                   </Link>
                   <Link
                     href="https://wa.me/905318598487"
                     className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-lg hover:bg-[#8a0a0a] transition"
                   >
-                    {t("register")}
+                    سجل الآن
                   </Link>
                 </div>
               </div>
@@ -98,7 +87,7 @@ export default function UniversitiesSlider() {
       </div>
 
       <button className="mt-11 bg-[#B10B0B] text-white py-3 px-8 rounded-full hover:bg-[#8a0a0a] transition">
-        {t("moreBtn")}
+        تعرف على جامعات أكثر
       </button>
     </section>
   );

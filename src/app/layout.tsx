@@ -8,16 +8,13 @@ export default function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  // Get locale from next-intl (or another i18n provider)
-  const locale = useLocale();
+ 
+ 
 
-  // Ensure locale is safe
-  const safeLocale: Locale = routing.locales.includes(locale as Locale)
-    ? (locale as Locale)
-    : routing.defaultLocale;
 
+  
   return (
-    <html lang={safeLocale} dir={safeLocale === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang="ar">
       <body>{children}</body>
     </html>
   );

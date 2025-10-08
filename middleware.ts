@@ -23,7 +23,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  return NextResponse.next();
+  
 }
 
 // ✅ Next.js 15 matcher الصحيح
