@@ -32,7 +32,7 @@ const Navbar = () => {
             info@fusion-turk.com
           </Link>
           <Link href="https://wa.me/905318598487" className="text-white hover:text-secondary font-semibold">
-            00905013530333
+            00905318598487
           </Link>
         </div>
 
@@ -55,12 +55,12 @@ const Navbar = () => {
       </div>
 
       {/* الناف بار الرئيسي */}
-      <nav className="bg-white text-black fixed w-full rtl:flex-row ltr:flex-row-reverse z-40">
+      <nav dir='rtl' className="bg-white text-black fixed w-full rtl:flex-row ltr:flex-row-reverse z-40">
         <div className="sm:px-6 lg:px-8">
           <div className="flex justify-between items-center md:h-[140px] px-5">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Image src="/Logo/Logo.jpg" alt="FUSION logo" width={60} height={50} className="w-auto h-auto" />
+              <Image src="/Logo/logo2.png" alt="FUSION logo" width={60} height={50} className="w-auto h-auto" />
             </div>
 
             {/* Desktop Menu */}

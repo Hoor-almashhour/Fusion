@@ -24,7 +24,7 @@ export default function SearchSection() {
       </div>
 
       {/* البحث */}
-      <div className="w-full max-w-7xl bg-white shadow-lg rounded-sm p-4">
+      <div dir="rtl" className="w-full max-w-7xl bg-white shadow-lg rounded-sm p-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mb-4">
           <select className="border rounded p-2 text-gray-600">
             <option>الدرجة</option>
@@ -43,7 +43,7 @@ export default function SearchSection() {
         <div className="flex flex-col md:flex-row gap-2">
           <input
             type="text"
-            placeholder="...بحث عن "
+            placeholder="بحث عن ..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 border rounded p-2 text-right text-gray-700 border-gray-600"

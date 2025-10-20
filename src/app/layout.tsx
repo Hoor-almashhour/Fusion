@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Cairo } from 'next/font/google'
 
 import Navbar from './component/Navbar/Navbar'
 
@@ -8,7 +8,7 @@ import Navbar from './component/Navbar/Navbar'
 
 
 
-const inter = Inter({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fusion',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cairo .className}>
     
            <Navbar />
             {children}

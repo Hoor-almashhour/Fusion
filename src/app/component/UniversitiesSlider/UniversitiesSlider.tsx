@@ -4,14 +4,15 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { CiLocationOn } from "react-icons/ci";
 
 const universities = [
-  { name: "جامعة كولتور", city: "Istanbul", logo: "/logos/Kultur.png" },
-  { name: "جامعة تيد", city: "Ankara", logo: "/logos/Ted.webp" },
-  { name: "جامعة اسطنبول التجارية", city: "Istanbul", logo: "/logos/tic.avif" },
-  { name: "جامعة بهتشه شهير", city: "Istanbul", logo: "/logos/Bau.webp" },
-  { name: "جامعة أوزيجين", city: "Istanbul", logo: "/logos/yeni.jpg" },
-  { name: "جامعة نيشان تاشي", city: "Istanbul", logo: "/logos/nisantasi.jpg" },
+  { name: "جامعة كولتور", icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/Kultur.png" },
+  { name: "جامعة تيد", icon: <CiLocationOn />, city: "Ankara", logo: "/logos/Ted.webp" },
+  { name: "جامعة اسطنبول التجارية", icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/tic.avif" },
+  { name: "جامعة بهتشه شهير",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/Bau.webp" },
+  { name: "جامعة أوزيجين",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/yeni.jpg" },
+  { name: "جامعة نيشان تاشي",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/nisantasi.jpg" },
 ];
 
 export default function UniversitiesSlider() {
@@ -34,21 +35,21 @@ export default function UniversitiesSlider() {
         {/* أزرار التنقل */}
         <button
           onClick={prevSlide}
-          className="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 bg-[#B10B0B] text-white p-2 rounded-full hover:bg-[#8a0a0a] transition z-10"
+          className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 bg-[#B10B0B] text-white p-2 rounded-full hover:bg-[#8a0a0a] transition z-10"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={28} />
         </button>
 
         <div
-          className="flex transition-transform duration-[800ms] ease-in-out"
+          className=" flex gap-4 transition-transform duration-[800ms] ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {universities.map((u, index) => (
             <div
               key={index}
-              className="min-w-full sm:min-w-1/2 md:min-w-1/3 flex justify-center"
+              className="min-w-full sm:min-w-1/2 md:min-w-1/3 flex justify-center "
             >
-              <div className="w-full sm:w-3/4 md:w-[340px] rounded-2xl border shadow-lg p-6 flex flex-col items-center justify-between h-[320px] bg-white mx-auto">
+              <div className="flex-shrink-0  w-[90%]   md:w-[320px] rounded-2xl border shadow-lg p-6 flex flex-col items-center justify-between h-[320px] bg-white mx-auto">
                 <Image
                   src={u.logo}
                   alt={u.name}
@@ -57,18 +58,22 @@ export default function UniversitiesSlider() {
                   className="object-contain mb-4"
                 />
                 <h3 className="text-xl font-bold text-[#F9680E] mb-2">{u.name}</h3>
-                <p className="text-gray-700 uppercase">{u.city}</p>
+                <div className="flex items-center justify-center gap-1.5">
+                     <p className="text-gray-700 uppercase" >{u.city}</p>
+                     <span className="text-gray-700 text-lg">{u.icon}</span>
+                </div>
+               
 
-                <div className="flex flex-col sm:flex-row justify-between w-full mt-6 gap-2">
+                <div className="flex flex-row justify-between w-full mt-6">
                   <Link
                     href="#"
-                    className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-lg hover:bg-[#f77b2b] transition"
+                    className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-l-lg hover:bg-[#f77b2b] transition"
                   >
-                    المزيد...
+                     ...المزيد
                   </Link>
                   <Link
                     href="https://wa.me/905318598487"
-                    className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-lg hover:bg-[#8a0a0a] transition"
+                    className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-r-lg hover:bg-[#8a0a0a] transition"
                   >
                     سجل الآن
                   </Link>
@@ -80,13 +85,13 @@ export default function UniversitiesSlider() {
 
         <button
           onClick={nextSlide}
-          className="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 bg-[#B10B0B] text-white p-2 rounded-full hover:bg-[#8a0a0a] transition z-10"
+          className="cursor-pointer absolute right-1 top-1/2 -translate-y-1/2 bg-[#B10B0B] text-white p-2 rounded-full hover:bg-[#8a0a0a] transition z-10"
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={28} />
         </button>
       </div>
 
-      <button className="mt-11 bg-[#B10B0B] text-white py-3 px-8 rounded-full hover:bg-[#8a0a0a] transition">
+      <button className="mt-11 bg-[#B10B0B] text-white py-3 px-8 rounded-full font-extrabold hover:bg-[#8a0a0a] transition">
         تعرف على جامعات أكثر
       </button>
     </section>
