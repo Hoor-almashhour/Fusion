@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const links = [
     { href: "/", label: "الرئيسية" },
-    { href: "#", label: "خطوات الدراسة في الخارج" },
+    { href: "/StudyStepsInTurkey", label: "خطوات الدراسة في الخارج" },
     { href: "#", label: "الدول", icon: <IoChevronDown /> },
     { href: "#", label: "الجامعات", icon: <IoChevronDown /> },
     { href: "#", label: "باقات فيوجن" },

@@ -22,7 +22,6 @@ export default  function HomePage() {
       <HeroStatsSection/>
       <StepsSection/>
       <LogoSlider/>
-      <Footer/>
     </>
   );
 }

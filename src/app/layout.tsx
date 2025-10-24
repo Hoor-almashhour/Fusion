@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Cairo } from 'next/font/google'
 
 import Navbar from './component/Navbar/Navbar'
+import Footer from './component/Footer/Footer'
 
 
 
@@ -19,9 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={cairo .className}>
-    
            <Navbar />
             {children}
+            <Footer/>
       </body>
     </html>
   )
