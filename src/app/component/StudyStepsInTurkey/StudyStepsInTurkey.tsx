@@ -109,7 +109,7 @@ export default function StepsSection() {
             className="relative flex flex-col items-center text-center"
           >
             {/* الصورة فوق الكرت */}
-            <div  className={` md:absolute md:-top-35 md:z-10  h-[165px] w-full p-5 overflow-hidden flex items-center justify-center ${s.gradient}`}
+            <div  className={` md:absolute md:-top-35 md:z-10  h-[165px] w-full p-5 flex items-center justify-center ${s.gradient}`}
              >
               <Image
                 src={s.src}
