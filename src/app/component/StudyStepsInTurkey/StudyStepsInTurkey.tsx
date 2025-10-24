@@ -112,12 +112,14 @@ export default function StepsSection() {
             <div  className={` w-full  flex items-center justify-center h-48 ${s.gradient}`}
              >
               <Image
-                 src="/StudySteps/step1.png"
+                src={s.src}
                 alt={s.title}
-                width={165}
-                height={165}
-                priority={i<2}
-                className="object-contain drop-shadow-lg "
+                width={120}
+                height={120}
+                  className="object-contain drop-shadow-lg w-20 h-20 md:w-32 md:h-32"
+                  priority={i < 3}
+                  sizes="(max-width: 768px) 80px,120px"
+
               />
             </div>
 
