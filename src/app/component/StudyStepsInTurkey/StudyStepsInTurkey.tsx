@@ -112,7 +112,7 @@ export default function StepsSection() {
             <div  className={` w-full  flex items-center justify-center h-48 ${s.gradient}`}
              >
               <Image
-                src={s.src}
+                 src="/StudySteps/step1.png"
                 alt={s.title}
                 width={165}
                 height={165}
