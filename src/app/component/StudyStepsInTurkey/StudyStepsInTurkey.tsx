@@ -109,16 +109,16 @@ export default function StepsSection() {
             className="relative flex flex-col items-center text-center"
           >
             {/* الصورة فوق الكرت */}
-            <div  className={` w-full  flex items-center justify-center h-48 ${s.gradient}`}
+            <div  className={` w-full  flex items-center justify-center h-32 md:h-48 ${s.gradient} relative overflow-hidden`}
              >
               <Image
                 src={s.src}
                 alt={s.title}
                 width={120}
                 height={120}
-                  className="object-contain drop-shadow-lg w-20 h-20 md:w-32 md:h-32"
-                  priority={i < 3}
-                  sizes="(max-width: 768px) 80px,120px"
+                className="object-contain drop-shadow-lg w-20 h-20 md:w-32 md:h-32"
+                priority={i < 3}
+                sizes="(max-width: 768px) 80px,120px"
 
               />
             </div>
