@@ -116,6 +116,8 @@ export default function StepsSection() {
                 alt={s.title}
                 width={165}
                 height={165}
+                style={{ height: 'auto', width: 'auto' }} 
+                priority
                 className="object-contain drop-shadow-lg"
               />
             </div>
