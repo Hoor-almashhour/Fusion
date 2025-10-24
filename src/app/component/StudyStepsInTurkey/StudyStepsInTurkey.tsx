@@ -84,7 +84,7 @@ export default function StepsSection() {
       dir="rtl"
       className="relative w-full bg-gradient-to-b from-white to-gray-50 overflow-hidden"
     >
-        <div className="absolute  bottom-55 right-10 w-full h-full ">
+        <div className="absolute  bottom-55 right-12 w-full h-full ">
           <Image
             src="/StudySteps/bg.png"
             alt="background"
@@ -93,7 +93,7 @@ export default function StepsSection() {
             className="object-contain opacity-15 translate-y-10 scale-125"
           />
        </div>
-      <div className="pt-36 md:pt-96 md:mt-44">
+      <div className="pt-36 md:pt-80 md:mt-40">
        <div className="flex flex-col md:grid md:grid-cols-7 relative">
         {steps.map((s, i) => (
           <motion.article
@@ -109,7 +109,7 @@ export default function StepsSection() {
             className="relative flex flex-col items-center text-center"
           >
             {/* الصورة فوق الكرت */}
-            <div  className={` md:absolute md:-top-35 md:z-10  h-[165px] w-full p-5 flex items-center justify-center ${s.gradient}`}
+            <div  className={` w-full  flex items-center justify-center ${s.gradient}`}
              >
               <Image
                 src={s.src}
@@ -118,17 +118,17 @@ export default function StepsSection() {
                 height={165}
                 style={{ height: 'auto', width: 'auto' }} 
                 priority
-                className="object-contain drop-shadow-lg"
+                className="object-contain drop-shadow-lg "
               />
             </div>
 
             {/* الكرت */}
             <div
-              className={`flex flex-col justify-between w-full shadow-lg ${s.color} p-5  pt-10 md:pt-8  min-h-[267px]`}
+              className={`flex flex-col justify-between w-full shadow-lg ${s.color} p-5 pt-8 md:pt-8 min-h-[280px]`}
             >
               <h3 className="text-lg font-bold mb-2">{s.title}</h3>
               <p className="text-sm leading-relaxed font-semibold">{s.description}</p>
-              <div className="mt-5 relative flex items-center justify-center">
+              <div className="mt-2 md:mt-5 relative flex items-center justify-center">
                   <div className="absolute w-16 h-16 rounded-full border border-white/50"></div>
                   <div className="absolute w-14 h-14 px-4 rounded-full border-9 border-white/70"></div>
                   <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl font-bold ">
