@@ -8,7 +8,7 @@ type Step = {
   title: string;
   description: string;
   color: string;
-   gradient: string;
+  gradient: string;
   src: string;
 };
 
@@ -109,13 +109,14 @@ export default function StepsSection() {
             className="relative flex flex-col items-center text-center"
           >
             {/* الصورة فوق الكرت */}
-            <div  className={` w-full  flex items-center justify-center ${s.gradient}`}
+            <div  className={` w-full  flex items-center justify-center h-48 ${s.gradient}`}
              >
               <Image
                 src={s.src}
                 alt={s.title}
                 width={165}
                 height={165}
+                priority={i<2}
                 className="object-contain drop-shadow-lg "
               />
             </div>
