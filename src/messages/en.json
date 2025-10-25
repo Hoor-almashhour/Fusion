@@ -1,0 +1,67 @@
+{
+  "navbar": {
+      "home": "Home",
+    "steps": "Steps to Study Abroad",
+    "country": "Countries",
+    "universities": "Universities",
+    "packages": "Fusion Packages",
+    "news": "News & Articles",
+    "about": "Who We Are",
+    "contact": "Contact Us",
+    "register": "Register Now",
+    "partner": "Be Our Partner"
+
+  },
+  "hero": {
+    "title": "Get your university admission in Turkey",
+    "subtitle": "Don't miss ",
+    "word": "the opportunity!",
+    "description":"Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admission and visa procedures.",
+    "btn1":"Universities",
+    "btn2": "Contact us"
+  },
+  "search": {
+    "title": "Find Specitaly",
+    "subtitle": ".Use our advanced search engine to find the right match for you",
+    "degree": "Degree",
+    "language": "Language",
+    "major": "Specitaly",
+    "universities": "Universities",
+    "placeholder": " ... Search for",
+    "btnSearch": "Search",
+    "btnAdvanced": "Advanced"
+  },
+  
+  "whyChoose": {
+    "title": "Why Choose Fusion for University Admission in Turkey?",
+    "subtitle": "4 reasons to choose Fusion",
+    "reasons": [
+      {
+        "title": "Free University Admission",
+        "description": "We help students get accepted to the right university with affordable tuition fees and full support."
+      },
+      {
+        "title": "Professional Team",
+        "description": "A leading company in educational services since 2015, helping students study in Turkey."
+      },
+      {
+        "title": "Free Consultation",
+        "description": "We help you choose your major with the guidance of expert consultants."
+      },
+      {
+        "title": "Exclusive Discounts",
+        "description": "We offer university discounts up to 70% off tuition fees."
+      }
+    ]
+  },
+  "universities": {
+    "title": "Our Universities",
+    "subtitle": "Top universities in Turkey and Northern Cyprus",
+    "moreBtn": "Discover More Universities",
+    "details": "More...",
+    "register": "Register Now"
+  }
+}
+
+
+
