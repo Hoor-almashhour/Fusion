@@ -29,7 +29,7 @@ export default function LogoSlider() {
         {[...logos, ...logos].map((logo, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-28 h-28 md:w-32 md:h-32 bg-white rounded-full shadow-sm flex items-center justify-center p-4"
+            className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white rounded-full shadow-sm flex items-center justify-center p-4"
           >
             <Image
               src={logo.src}

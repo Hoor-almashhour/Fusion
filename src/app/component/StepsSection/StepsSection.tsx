@@ -57,7 +57,7 @@ export default function StepsSection() {
               />
             </div>
             <div className="relative mt-2">
-              <div className="absolute right-3 -top-38">
+              <div className="absolute md:right-3 -top-38 -right-8  ">
                 <div className="w-12 h-12 rounded-full bg-[#8a0a0a] text-white flex items-center justify-center text-lg font-semibold">
                   2
                 </div>
@@ -82,7 +82,7 @@ export default function StepsSection() {
               />
             </div>
             <div className="relative mt-2">
-              <div className="absolute right-3 -top-38 ">
+              <div className="absolute md:right-3 md:-top-38 right-1  -top-35">
                 <div className="w-12 h-12 rounded-full bg-[#F9680E] text-white flex items-center justify-center text-lg font-semibold">
                   3
                 </div>
@@ -107,7 +107,7 @@ export default function StepsSection() {
               />
             </div>
             <div className="relative mt-2">
-              <div className="absolute right-3 -top-38 ">
+              <div className="absolute md:right-3 md:-top-38 right-12 -top-35">
                 <div className="w-12 h-12 rounded-full bg-[#8a0a0a] text-white flex items-center justify-center text-lg font-semibold">
                   4
                 </div>
