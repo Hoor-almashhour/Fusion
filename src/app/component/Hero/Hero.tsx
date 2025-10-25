@@ -30,9 +30,9 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-row gap-4 justify-center md:justify-end items-center">
-            <button className="bg-[#B10B0B] text-white px-6 py-2 rounded-full flex items-center gap-3">
+            <button className="bg-[#B10B0B] text-white px-6 py-2 rounded-full flex items-center justify-center gap-3">
+               <FaArrowLeft />
               الجامعات
-              <FaArrowLeft />
             </button>
             <button className="bg-[#F9680E] text-white px-6 py-2 rounded-full">
               تواصل معنا

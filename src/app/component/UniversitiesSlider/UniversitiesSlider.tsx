@@ -4,16 +4,11 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { CiLocationOn } from "react-icons/ci";
+import { universities } from "@/app/data/universities";
+import UniversityCard from "../UniversityCard/UniversityCard";
 
-const universities = [
-  { name: "جامعة كولتور", icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/Kultur.png" },
-  { name: "جامعة تيد", icon: <CiLocationOn />, city: "Ankara", logo: "/logos/Ted.webp" },
-  { name: "جامعة اسطنبول التجارية", icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/tic.avif" },
-  { name: "جامعة بهتشه شهير",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/Bau.webp" },
-  { name: "جامعة أوزيجين",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/yeni.jpg" },
-  { name: "جامعة نيشان تاشي",icon: <CiLocationOn />, city: "Istanbul", logo: "/logos/nisantasi.jpg" },
-];
+
+
 
 export default function UniversitiesSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,46 +36,20 @@ export default function UniversitiesSlider() {
         </button>
 
         <div
-          className=" flex gap-4 transition-transform duration-[800ms] ease-in-out"
+          className="flex gap-4 transition-transform duration-[800ms] ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {universities.map((u, index) => (
-            <div
-              key={index}
-              className="min-w-full sm:min-w-1/2 md:min-w-1/3 flex justify-center "
-            >
-              <div className="flex-shrink-0  w-[90%]   md:w-[320px] rounded-2xl border shadow-lg p-6 flex flex-col items-center justify-between h-[320px] bg-white mx-auto">
-                <Image
-                  src={u.logo}
-                  alt={u.name}
-                  width={96}
-                  height={96}
-                  className="object-contain mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#F9680E] mb-2">{u.name}</h3>
-                <div className="flex items-center justify-center gap-1.5">
-                     <p className="text-gray-700 uppercase" >{u.city}</p>
-                     <span className="text-gray-700 text-lg">{u.icon}</span>
-                </div>
-               
-
-                <div className="flex flex-row justify-between w-full mt-6">
-                  <Link
-                    href="#"
-                    className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-l-lg hover:bg-[#f77b2b] transition"
-                  >
-                     ...المزيد
-                  </Link>
-                  <Link
-                    href="https://wa.me/905318598487"
-                    className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-r-lg hover:bg-[#8a0a0a] transition"
-                  >
-                    سجل الآن
-                  </Link>
-                </div>
+          {universities.map((u, index) => {
+            const Icon = u.icon; 
+            return (
+              <div
+                key={index}
+                className="min-w-full sm:min-w-1/2 md:min-w-1/3 flex justify-center"
+              >
+                 <UniversityCard key={u.name} {...u} />
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <button

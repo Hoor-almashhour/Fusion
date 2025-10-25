@@ -2,16 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-
-const logos = [
-  { src: "/logos/Kultur.png", alt: "Ozyegin University" },
-  { src: "/logos/Ted.webp", alt: "Istanbul Kent University" },
-  { src: "/logos/tic.avif", alt: "Nisantasi University" },
-  { src: "/logos/Bau.webp", alt: "Fenerbahce University" },
-  { src: "/logos/yeni.jpg", alt: "Gedik University" },
-  { src: "/logos/nisantasi.jpg", alt: "Yeni Yuzyil University" },
-];
+import { universities } from "@/app/data/universities";
+ // استيراد البيانات
 
 export default function LogoSlider() {
   return (
@@ -22,22 +14,23 @@ export default function LogoSlider() {
         transition={{
           repeat: Infinity,
           ease: "linear",
-          duration: 25, // سرعة الحركة (كلما زادت القيمة صار أبطأ)
+          duration: 25,
         }}
       >
         {/* نكرر القائمة مرتين حتى لا يكون هناك فراغ عند نهاية الانزلاق */}
-        {[...logos, ...logos].map((logo, idx) => (
+        {[...universities, ...universities].map((u, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white rounded-full shadow-sm flex items-center justify-center p-4"
+            className="flex-shrink-0 w-24 h-24 md:w-30 md:h-30 bg-white rounded-full shadow-sm flex flex-col items-center justify-center p-4"
           >
             <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={120}
-              height={120}
-              className="object-contain"
+              src={u.logo}
+              alt={u.name}
+              width={110}
+              height={110}
+              className="object-contain rounded-full "
             />
+            
           </div>
         ))}
       </motion.div>
