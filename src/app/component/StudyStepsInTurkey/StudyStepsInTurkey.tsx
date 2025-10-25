@@ -114,9 +114,9 @@ export default function StepsSection() {
               <Image
                 src={s.src}
                 alt={s.title}
-                width={150}
-                height={150}
-                className="object-contain drop-shadow-lg w-auto h-auto md:w-32 md:h-32"
+                width={140}
+                height={140}
+                className="object-contain drop-shadow-lg w-25 h-25 md:w-32 md:h-32"
                 priority={i < 3}
                 unoptimized
                 sizes="(max-width: 768px) 80px,120px"
