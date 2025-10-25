@@ -118,8 +118,8 @@ export default function StepsSection() {
                 height={140}
                 className="object-contain drop-shadow-lg w-35 h-35 md:w-32 md:h-32"
                 priority={i < 3}
-                unoptimized
-                sizes="(max-width: 768px) 80px,120px"
+               sizes="(max-width: 768px) 100px, (max-width: 1200px) 150px, 200px"
+
 
               />
             </div>
