@@ -14,6 +14,7 @@ export default function UniversityCard({ name, city, logo, icon: Icon }: Props) 
                 alt={name}
                 width={96}
                 height={96}
+                unoptimized
                 className="object-contain mb-4"
             />
             <h3 className="text-xl font-bold text-[#F9680E] mb-2">{name}</h3>

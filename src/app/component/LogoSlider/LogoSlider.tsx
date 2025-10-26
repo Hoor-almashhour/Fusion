@@ -17,18 +17,18 @@ export default function LogoSlider() {
           duration: 25,
         }}
       >
-        {/* نكرر القائمة مرتين حتى لا يكون هناك فراغ عند نهاية الانزلاق */}
         {[...universities, ...universities].map((u, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-24 h-24 md:w-30 md:h-30 bg-white rounded-full shadow-sm flex flex-col items-center justify-center p-4"
+            className="flex-shrink-0 w-24 h-24 md:w-30 md:h-30 bg-white rounded-full shadow-sm flex flex-col items-center justify-center p-6"
           >
             <Image
               src={u.logo}
               alt={u.name}
-              width={110}
-              height={110}
-              className="object-contain rounded-full "
+              width={120}
+              height={120}
+               unoptimized
+              className="object-contain  "
             />
             
           </div>

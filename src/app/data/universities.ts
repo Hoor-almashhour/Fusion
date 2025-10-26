@@ -1,4 +1,4 @@
-// /data/universities.ts
+
 import type { IconType } from "react-icons";
 import { CiLocationOn } from "react-icons/ci";
 
