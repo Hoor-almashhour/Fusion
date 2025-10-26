@@ -17,7 +17,7 @@ export default function LogoSlider() {
           duration: 25,
         }}
       >
-        {[...universities, ...universities].map((u, idx) => (
+        {[...universities, ].map((u, idx) => (
           <div
             key={idx}
             className="flex-shrink-0 w-24 h-24 md:w-30 md:h-30 bg-white rounded-full shadow-sm flex flex-col items-center justify-center p-6"
