@@ -28,7 +28,7 @@ export default function LogoSlider() {
               width={120}
               height={120}
                unoptimized
-              className="object-contain  "
+              className="object-contain "
             />
             
           </div>

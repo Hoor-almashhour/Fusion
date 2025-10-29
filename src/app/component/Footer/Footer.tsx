@@ -1,6 +1,6 @@
 "use client";
 
-import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp, FaTelegramPlane, FaClock, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHome, FaUniversity, FaUser, FaPen, FaRegClipboard } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaTelegramPlane, FaClock, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHome, FaUniversity, FaUser, FaPen, FaRegClipboard } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTiktok } from "react-icons/fa6";
@@ -115,8 +115,9 @@ export default function Footer() {
          justify-center  items-center gap-2">
         <div className="flex gap-4">
           <Link href="#" className="hover:text-yellow-400 transition font-extrabold">
-            SUPPORT
+            SUPPORT 
           </Link>
+          <span> |</span>
           <Link href="#" className="hover:text-yellow-400 transition font-extrabold">
             PRIVACY POLICY
           </Link>

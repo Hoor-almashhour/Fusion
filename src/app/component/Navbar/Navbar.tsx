@@ -15,7 +15,6 @@ const Navbar = () => {
   const links = [
     { href: "/", label: "الرئيسية" },
     { href: "/StudyStepsInTurkey", label: "خطوات الدراسة في الخارج" },
-    { href: "#", label: "الدول", icon: <IoChevronDown /> },
     { href: "#", label: "الجامعات", icon: <IoChevronDown /> },
     { href: "#", label: "باقات فيوجن" },
     { href: "#", label: "أخبار ومقالات" },
@@ -24,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="text-sm">
+    <header className="text-sm ">
       {/* الشريط العلوي */}
       <div className="hidden md:flex justify-between items-center py-2 px-[130px] text-white text-sm rtl:flex-row-reverse ltr:flex-row bg-primary">
         <div className="flex justify-center items-center gap-7 flex-row-reverse">
@@ -64,21 +63,62 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex font-semibold text-black rtl:flex-row ltr:flex-row-reverse">
-              {links.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className={`flex items-center gap-1 px-3 py-6 hover:text-orange-500 ${
-                      pathname === link.href ? "text-orange-500" : ""
-                    }`}
-                  >
-                    {link.label}
-                    {link.icon && <span>{link.icon}</span>}
-                  </Link>
+            {/* روابط القائمة الرئيسية */}
+              <ul className="hidden md:flex font-semibold text-black rtl:flex-row ltr:flex-row-reverse relative">
+                 {links.slice(0, 2).map((link) => ( 
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className={`flex items-center gap-1 px-3 py-6 hover:text-[#F9680E] ${
+                        pathname === link.href ? "text-[#F9680E]" : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+               ))}
+
+                {/* القائمة المنسدلة للدول */}
+                <li className="relative group">
+                  <button className="flex items-center gap-1 px-3 py-6 hover:text-orange-500">
+                    الدول <IoChevronDown />
+                  </button>
+                   <ul className="absolute right-0 top-full mt-1 w-44 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    {[
+                      { href: "/countries/Turkey", label: "تركيا" },
+                      { href: "/countries/malaysia", label: "ماليزيا" },
+                      { href: "/countries/cyprus", label: "قبرص" },
+                    ].map((country) => (
+                      <li key={country.href}>
+                        <Link
+                          href={country.href}
+                          className={`block px-4 py-2 rounded-md transition-all duration-200
+                            ${
+                              pathname === country.href
+                                ? "text-[#F9680E] font-semibold"
+                                : "text-gray-700 hover:bg-gray-100 hover:text-[#F9680E]"
+                            }`}
+                        >
+                          {country.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </li>
-              ))}
-            </ul>
+                {links.slice(2).map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className={`flex items-center gap-1 px-3 py-6 hover:text-[#F9680E] ${
+                        pathname === link.href ? "text-[#F9680E]" : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
 
             {/* زر التسجيل */}
             <div className="hidden md:flex items-center gap-4">
@@ -115,6 +155,14 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+                <li className="mt-2">
+                <span className="font-bold text-white">الدول</span>
+                <ul className="mt-2 ml-4 text-gray-200">
+                  <li><Link href="/countries/turkey" onClick={() => setMenuOpen(false)}>تركيا</Link></li>
+                  <li><Link href="/countries/malaysia" onClick={() => setMenuOpen(false)}>ماليزيا</Link></li>
+                  <li><Link href="/countries/cyprus" onClick={() => setMenuOpen(false)}>قبرص</Link></li>
+                </ul>
+              </li>
             </ul>
 
             {/* روابط اللغة */}
