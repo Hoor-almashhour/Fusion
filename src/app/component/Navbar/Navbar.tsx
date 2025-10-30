@@ -63,7 +63,6 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            {/* روابط القائمة الرئيسية */}
               <ul className="hidden md:flex font-semibold text-black rtl:flex-row ltr:flex-row-reverse relative">
                  {links.slice(0, 2).map((link) => ( 
                   <li key={link.label}>
@@ -145,25 +144,59 @@ const Navbar = () => {
                 <FaTimes className="text-2xl text-white" />
               </button>
             </div>
-
-            <ul className="flex flex-col  items-center font-semibold text-white text-lg px-4">
-              {links.map((link) => (
+            {/*  Mobile Menu */}
+            <ul className="flex flex-col items-center font-semibold text-white text-lg px-4">
+              {/* 🏠 الرئيسية + خطوات الدراسة */}
+              {links.slice(0, 2).map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} onClick={() => setMenuOpen(false)} className="px-4 py-4 flex justify-between items-center">
+                  <Link
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="px-4 py-4 flex justify-between items-center w-full text-center"
+                  >
                     {link.label}
-                    {link.icon && <span>{link.icon}</span>}
                   </Link>
                 </li>
               ))}
-                <li className="mt-2">
-                <span className="font-bold text-white">الدول</span>
-                <ul className="mt-2 ml-4 text-gray-200">
-                  <li><Link href="/countries/turkey" onClick={() => setMenuOpen(false)}>تركيا</Link></li>
-                  <li><Link href="/countries/malaysia" onClick={() => setMenuOpen(false)}>ماليزيا</Link></li>
-                  <li><Link href="/countries/cyprus" onClick={() => setMenuOpen(false)}>قبرص</Link></li>
+
+              {/* 🌍 الدول (القائمة المنسدلة) */}
+              <li className="mt-2 w-full text-center">
+                <span className="font-bold text-white flex justify-center items-center gap-2">
+                  الدول <IoChevronDown className="text-white" />
+                </span>
+                <ul className="mt-2 text-gray-200 space-y-1">
+                  <li>
+                    <Link href="/countries/Turkey" onClick={() => setMenuOpen(false)} className="block py-1">
+                      تركيا
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/countries/malaysia" onClick={() => setMenuOpen(false)} className="block py-1">
+                      ماليزيا
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/countries/cyprus" onClick={() => setMenuOpen(false)} className="block py-1">
+                      قبرص
+                    </Link>
+                  </li>
                 </ul>
               </li>
+
+              {/* باقي الروابط */}
+              {links.slice(2).map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="px-4 py-4 flex justify-between items-center w-full text-center"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
+
 
             {/* روابط اللغة */}
             <div className="flex flex-col  items-center gap-4 px-9 mt-2">
