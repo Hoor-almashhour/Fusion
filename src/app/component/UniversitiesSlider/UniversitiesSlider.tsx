@@ -1,17 +1,18 @@
 "use client";
 
-import Image from "next/image";
+
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { universities } from "@/app/data/universities";
 import UniversityCard from "../UniversityCard/UniversityCard";
-
+import { useTranslations } from "next-intl";
 
 
 
 export default function UniversitiesSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+   const t = useTranslations("universities");
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % universities.length);
@@ -23,8 +24,8 @@ export default function UniversitiesSlider() {
 
   return (
     <section className="w-full bg-white py-10 flex flex-col items-center text-center">
-      <h2 className="text-3xl font-bold text-[#B10B0B] mb-2">جامعاتنا</h2>
-      <p className="text-gray-600 mb-8">أهم الجامعات في تركيا وشمال قبرص التركية</p>
+      <h2 className="text-3xl font-bold text-[#B10B0B] mb-2">{t("title")}</h2>
+      <p className="text-gray-600 mb-8">{t("subtitle")}</p>
 
       <div className="relative w-full max-w-6xl overflow-hidden px-6">
         {/* أزرار التنقل */}
@@ -61,7 +62,7 @@ export default function UniversitiesSlider() {
       </div>
 
       <button className="mt-11 bg-[#B10B0B] text-white py-3 px-8 rounded-full font-extrabold hover:bg-[#8a0a0a] transition">
-        تعرف على جامعات أكثر
+        {t("moreBtn")}
       </button>
     </section>
   );

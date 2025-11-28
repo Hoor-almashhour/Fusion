@@ -1,10 +1,14 @@
 {
   "navbar": {
-      "home": "Home",
-    "steps": "Steps to Study Abroad",
+    "home": "Home",
+    "steps": "Steps to Start",
     "country": "Countries",
+       "countriesList": {
+        "turkey": "Turkey",
+        "malaysia": "Malaysia",
+        "cyprus": "Cyprus"
+      },
     "universities": "Universities",
-    "packages": "Fusion Packages",
     "news": "News & Articles",
     "about": "Who We Are",
     "contact": "Contact Us",
@@ -16,7 +20,7 @@
     "title": "Get your university admission in Turkey",
     "subtitle": "Don't miss ",
     "word": "the opportunity!",
-    "description":"Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admission and visa procedures.",
+    "description":"Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admission and visa procedures",
     "btn1":"Universities",
     "btn2": "Contact us"
   },
@@ -27,7 +31,7 @@
     "language": "Language",
     "major": "Specitaly",
     "universities": "Universities",
-    "placeholder": " ... Search for",
+    "placeholder": "Search for...",
     "btnSearch": "Search",
     "btnAdvanced": "Advanced"
   },
@@ -60,7 +64,154 @@
     "moreBtn": "Discover More Universities",
     "details": "More...",
     "register": "Register Now"
+  },
+  "heroStats": {
+    "subtitle": "Get to Know Us More",
+    "title": "Because You Always Deserve the Best",
+    "stats": [
+      { "number": "+120", "label": "Advisory Team" },
+      { "number": "+120", "label": "University Majors" },
+      { "number": "+120", "label": "Accredited Universities" },
+      { "number": "+15,000", "label": "Happy Students" }
+    ],
+    "imageAlt": "Illustration Image"
+  },
+  "studySteps": {
+    "steps": [
+      {
+        "id": 1,
+        "title": "Free Consultation",
+        "description": "Start by contacting our educational advisor, who will explain all the details about studying in Turkey step-by-step and help you make the right decision.",
+        "color": "bg-[#404040] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#2e2e2e]",
+        "src": "/StudySteps/step1.png"
+      },
+      {
+        "id": 2,
+        "title": "Choose Your Major",
+        "description": "We help you select the most suitable major based on your interests and strengths to guarantee your academic future.",
+        "color": "bg-[#F2BF5E] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#FDEBC0]",
+        "src": "/StudySteps/step2.png"
+      },
+      {
+        "id": 3,
+        "title": "Select the University",
+        "description": "We explain university details, their advantages and disadvantages, and help you choose the best option.",
+        "color": "bg-[#48B0D9] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#BBD6E5]",
+        "src": "/StudySteps/step3.png"
+      },
+      {
+        "id": 4,
+        "title": "Fill Out the Registration Form",
+        "description": "After choosing your major and university, you can fill out the free online registration form.",
+        "color": "bg-[#BBBCC0] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#E5E6E7]",
+        "src": "/StudySteps/step4.png"
+      },
+      {
+        "id": 5,
+        "title": "University Admission",
+        "description": "You will receive your official university acceptance as soon as possible via email, along with the required details.",
+        "color": "bg-[#643073] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#BDA7C0]",
+        "src": "/StudySteps/step5.png"
+      },
+      {
+        "id": 6,
+        "title": "University Housing",
+        "description": "We help you find safe and comfortable accommodation in an environment that encourages studying and creativity.",
+        "color": "bg-[#A61F43] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#D699A1]",
+        "src": "/StudySteps/step6.png"
+      },
+      {
+        "id": 7,
+        "title": "Airport Pickup",
+        "description": "We welcome you at the airport and accompany you to your university housing to ensure your comfort and safety.",
+        "color": "bg-[#404040] text-white",
+        "gradient": "bg-gradient-to-b from-white to-[#2e2e2e]",
+        "src": "/StudySteps/step7.png"
+      }
+    ]
+  },
+  "studyStepsSection": {
+    "title": "Steps to Apply for Studying in Türkiye",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Contact the Educational Advisor",
+        "description": "Get all the necessary information for the application.",
+        "image": "/Steps/step1.png",
+        "color": "#F9680E"
+      },
+      {
+        "id": 2,
+        "title": "Prepare the Required Documents",
+        "description": "Prepare all required documents for government or private universities.",
+        "image": "/Steps/step2.png",
+        "color": "#8a0a0a"
+      },
+      {
+        "id": 3,
+        "title": "File Evaluation & Initial Acceptance",
+        "description": "After reviewing your file, you receive your initial acceptance.",
+        "image": "/Steps/step3.png",
+        "color": "#F9680E"
+      },
+      {
+        "id": 4,
+        "title": "Complete Procedures & Get Final Acceptance",
+        "description": "We complete the procedures to ensure you receive the final acceptance.",
+        "image": "/Steps/step4.png",
+        "color": "#8a0a0a"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send",
+    "placeholder": {
+      "phone": " 0531 859 8487"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "section1Title": "Who We Are",
+    "section1Text": "Fusion Education was founded in 2018 and quickly became a major player in education consulting and study abroad. We have developed strong partnerships with over 100 prestigious universities in Turkey, Malaysia, Spain, and Germany, greatly increasing our ability to meet the diverse educational aspirations of students from the Middle East and North Africa region.",
+    
+    "section2Title": "Our Vision",
+    "section2Text": "Our vision is to empower students to study at Turkish universities that represent an essential step in building their future. We strive to offer a supportive academic environment while maintaining high service quality.",
+    
+    "section3Title": "Our Mission",
+    "section3Text": "Our mission is to help international students reach Turkish universities, provide the best academic discounts, assist them in choosing the right major, and offer full support through a professional and experienced team."
+  },
+  "footer": {
+    "helpTitle": "We will help you choose the right educational path",
+    "phonePlaceholder": "Phone number with country code",
+    "send": "Send",
+
+    "contactTitle": "Contact Information",
+    "workHours": "From 8 AM to 6 PM, Monday to Saturday",
+    "address": "Taksim / Istanbul",
+
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "universities": "Universities",
+    "about": "About Us",
+    "blog": "Blog",
+    "register": "Register",
+
+    "support": "SUPPORT",
+    "privacy": "PRIVACY POLICY",
+    "rights": "Copyright © 2025 Fusion Education. All rights reserved"
   }
+
 }
 
 

@@ -1,21 +1,19 @@
-// /components/UniversityCard.tsx
+
 import { University } from "@/app/data/universities";
 import Link from "next/link";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 
 type Props = University;
 
 export default function UniversityCard({ name, city, logo, icon: Icon }: Props) {
+     const t = useTranslations("universities");
   return (
          <div className="flex-shrink-0 w-[90%] md:w-[320px] rounded-2xl border shadow-lg p-6 flex flex-col items-center justify-between h-[320px] bg-white mx-auto">
-            <Image
+            <img
                 src={logo}
                 alt={name}
-                width={96}
-                height={96}
-                unoptimized
-                className="object-contain mb-4"
+                className="object-contain mb-4 w-24 h-24"
             />
             <h3 className="text-xl font-bold text-[#F9680E] mb-2">{name}</h3>
             <div className="flex items-center justify-center gap-1.5">
@@ -27,14 +25,14 @@ export default function UniversityCard({ name, city, logo, icon: Icon }: Props) 
             <Link
                 href="#"
                 className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-l-lg hover:bg-[#f77b2b] transition"
-            >
-                ...المزيد
+            >   
+              {t("details")}
             </Link>
             <Link
                 href="https://wa.me/905318598487"
                 className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-r-lg hover:bg-[#8a0a0a] transition"
             >
-                سجل الآن
+             {t("register")}
             </Link>
             </div>
         </div>
