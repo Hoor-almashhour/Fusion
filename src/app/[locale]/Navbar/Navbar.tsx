@@ -8,7 +8,8 @@ import { usePathname } from 'next/navigation';
 import { IoChevronDown } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { useLocale, useTranslations } from 'next-intl';
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from '@/app/component/LanguageSwitcher/LanguageSwitcher';
+
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
   const t = useTranslations('navbar');
-  const rawCountries = t.raw('countriesList') as Record<string, string>;
+   const countries = t.raw('countriesList') as Record<string, string>;
   const locale = useLocale();
   const isArabic = locale === "ar";
  
@@ -96,7 +97,7 @@ const Navbar = () => {
                        {t('country')}<IoChevronDown />
                   </button>
                    <ul className="absolute right-0 top-full mt-1 w-44 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                     {Object.entries( rawCountries).map(([key, label]) => (
+                      {Object.entries(countries).map(([key, label]) => (
                       <li key={key}>
                         <Link
                           href={`/countries/${key}`}
@@ -184,7 +185,7 @@ const Navbar = () => {
 
                 {mobileCountriesOpen && (
                   <ul className="mt-2 text-gray-200 space-y-1">
-                        {Object.entries(rawCountries).map(([key, label]) => (
+                        {Object.entries(countries).map(([key, label]) => (
                           <li key={key}>
                             <Link
                               href={`/countries/${key}`}

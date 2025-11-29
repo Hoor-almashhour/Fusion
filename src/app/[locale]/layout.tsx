@@ -3,10 +3,11 @@ import type { Metadata } from 'next';
 import { Cairo } from 'next/font/google';
 import "react-phone-number-input/style.css";
 
-import Navbar from '../component/Navbar/Navbar';
+
 import Footer from '../component/Footer/Footer';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import Navbar from './Navbar/Navbar';
 
 const cairo = Cairo({ subsets: ['latin'] });
 
