@@ -199,71 +199,116 @@
     "whyStudyDesc": "Turkey is one of the best and most unique study destinations. Here are the main reasons why it stands out:",
 
     "reasons": [
-      {
-        "title": "High Quality Education",
-        "text": "Turkish universities apply international quality standards, ensuring high-level education with globally recognized degrees."
-      },
-      {
-        "title": "Large Variety of Universities",
-        "text": "There are over 200 universities, including state and private institutions, offering strong academic environments."
-      },
-      {
-        "title": "Availability of All Majors",
-        "text": "Turkey offers all popular majors such as medicine, engineering, arts, humanities, economics, and more."
-      },
-      {
-        "title": "Great Student Life",
-        "text": "Major cities like Istanbul and Ankara provide excellent living standards and entertainment options."
-      },
-      {
-        "title": "Modern Facilities",
-        "text": "Universities have modern labs, smart classrooms, workshops, and advanced libraries."
-      },
-      {
-        "title": "Updated Curriculums",
-        "text": "Universities consistently update curriculums and teaching methods."
-      },
-      {
-        "title": "Student Activities",
-        "text": "There are many student clubs and events throughout the year."
-      },
-      {
-        "title": "Practical Learning",
-        "text": "Programs combine theoretical learning with hands-on training and projects."
-      },
-      {
-        "title": "Strong International Partnerships",
-        "text": "Turkey participates in exchange programs like Erasmus, enhancing student experiences."
-      },
-      {
-        "title": "Advanced Research Opportunities",
-        "text": "Universities offer strong research centers and scientific laboratories."
-      },
-      {
-        "title": "Study in English",
-        "text": "Many programs are fully available in English."
-      },
-      {
-        "title": "Learn Turkish",
-        "text": "Studying in Turkey allows you to learn and practice the Turkish language daily."
-      },
-      {
-        "title": "Affordable Costs",
-        "text": "Living and tuition costs in Turkey are affordable compared to Europe."
-      },
-      {
+        {
+        "title": "Quality of Education",
+
+        "text": "Turkish universities apply international educational quality standards, guaranteeing you a distinguished education with internationally accredited degrees."
+
+        },
+
+        {
+        "title": "Diversity of Universities",
+
+        "text": "The number of universities in Turkey exceeds 200, both public and private, providing a competitive and advanced educational environment."
+
+        },
+
+        {
+        "title": "Availability of All Specializations",
+
+        "text": "The diversity of study programs is one of the most important features of Turkish universities, as all specializations required in the job market are available, such as: medical specializations, health sciences, engineering and technology specializations, architecture, arts, humanities and social sciences specializations, economics and management specializations, and others."
+
+        },
+
+        {
+        "title": "Quality of Student Life",
+
+        "text": "Most Turkish universities are concentrated in major cities such as Istanbul and Ankara, giving students a good living experience amidst the availability of all the services they may need, and the presence of many recreational opportunities."
+
+        },
+
+        {
+        "title": "Modern University Facilities and Equipment",
+
+        "text": "Most universities possess Turkey boasts a sophisticated infrastructure comprised of modern facilities and technological equipment that ensure the application of quality standards and contribute to providing you with an excellent education. Among the most important of these facilities are smart classrooms, laboratories, workshops, and large libraries."
+
+        },
+
+        {
+        "title": "Curriculum and Teaching Methods Development",
+
+        "text": "Turkish universities are constantly striving to develop their curricula to keep pace with the latest scientific discoveries and utilize the most advanced international teaching methods. Universities also prioritize selecting faculty members from among the most qualified and experienced professors in their respective fields."
+
+        },
+
+        {
+        "title": "Attention to Student Activities",
+
+        "text": "Turkish universities typically include a large number of student clubs offering diverse activities, including social, artistic, and athletic activities. Events such as concerts, festivals, competitions, and seminars are organized throughout the year."
+
+        },
+
+        {
+        "title": "Application-Based Learning",
+
+        "text": "Turkish universities employ a practical teaching approach that integrates theoretical study with practical application through projects and training within laboratories and workshops."
+
+        },
+
+        {
+        "title": "Strong Partnerships for Student Training",
+
+        "text": "Universities in Turkey are keen to establish cooperative partnerships with international universities to develop students' skills. They participate in student exchange programs such as the well-known European Erasmus program."
+
+        },
+
+        {
+        "title": "Providing Scientific Research Opportunities",
+
+        "text": "Most Turkish universities offer advanced research facilities within their laboratories and specialized scientific research centers."
+
+        },
+
+        {
+        "title": "The Possibility of Studying in English",
+
+        "text": "Turkish universities offer study programs in English across all disciplines, making it easier for international students to integrate and access global job opportunities."
+
+        },
+
+        {
+        "title": "Learning Turkish",
+
+        "text": "Studying in Turkey is a wonderful opportunity to learn and practice the Turkish language daily during university life and to interact with the Turkish people."
+
+        },
+
+        {
+        "title": "Low Living and Study Costs",
+
+        "text": "Tuition fees and living costs in Turkey are very reasonable compared to other European countries."
+
+        },
+
+        {
         "title": "Support for International Students",
-        "text": "Universities provide academic, psychological, and career support for foreign students."
-      },
-      {
-        "title": "Easy Admission",
-        "text": "Admission requirements are simple, especially in private universities."
-      }
-    ],
+
+        "text": "The Turkish government and universities support international students psychologically, academically, and professionally through support offices and guidance centers."
+
+        },
+
+        {
+        "title":"Ease of Admission and Travel Procedures",
+
+        "text":"One of the most important advantages of studying in Turkey is the ease of admission and the minimal complexity of registration requirements, especially in private universities."
+
+        }
+
+      ],
 
     "universitiesSection": "Top Universities in Turkey"
-  },
-  "contact": {
+    },
+   "contact": {
     "title": "Contact Us",
     "name": "Name",
     "email": "Email",

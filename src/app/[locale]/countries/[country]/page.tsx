@@ -140,11 +140,21 @@ export default function CountryPage({ params }: PageProps) {
           <p className="text-gray-700 text-lg leading-9 mb-8">{t("intro.p1")}</p>
           <p className="text-gray-700 text-lg leading-9 mb-12">{t("intro.p2")}</p>
 
-          {/* لماذا الدراسة في تركيا */}
-          <h2 className="text-3xl font-bold text-[#B10B0B] mb-6 text-right">{t("whyStudyTitle")}</h2>
-          <p className="text-gray-700 text-lg leading-8 mb-10 text-right">{t("whyStudyDesc")}</p>
+           <div className="relative w-full md:w-4/5 mx-auto bg-[#B10B0B] rounded-3xl overflow-hidden flex flex-col md:flex-row items-center justify-between p-6 md:p-12 shadow-lg">
+             {/* الخلفية شبه شفافة مع العلم */} 
+               <div className="absolute inset-0 opacity-30 bg-[url('/images/turkey-flag.jpg')] bg-cover bg-center "></div>
+               <div className="relative z-10 w-full md:w-1/2 flex justify-center ">
+                 <Image src="/images/student-turkey.png" alt="طالبة تدرس في تركيا"
+                   width={350} height={350} className="rounded-full border-4 border-yellow-400 shadow-xl object-cover" /> 
+                </div>
+            </div>
 
-          <div className="space-y-8">
+            {/* لماذا الدراسة في تركيا */}
+            <h2 className="text-3xl font-bold text-[#B10B0B] mt-9  text-right">{t("whyStudyTitle")}</h2>
+            <p className="text-gray-700 text-lg leading-8 mt-6 text-right">{t("whyStudyDesc")}</p>
+                
+           
+          <div className="space-y-8 mt-6">
              {reasons.map((item, index) => (
               <div key={index} className="text-right">
                 <div className="flex items-start justify-start flex-row-reverse">

@@ -1,19 +1,20 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Cairo } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Cairo } from "next/font/google";
 import "react-phone-number-input/style.css";
 
+import Footer from "../component/Footer/Footer";
+import Navbar from "./Navbar/Navbar";
 
-import Footer from '../component/Footer/Footer';
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import Navbar from './Navbar/Navbar';
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 
-const cairo = Cairo({ subsets: ['latin'] });
+const cairo = Cairo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Fusion',
-  description: 'An integrated platform to support international students applying to Turkish Universities',
+  title: "Fusion",
+  description:
+    "An integrated platform to support international students applying to Turkish Universities",
 };
 
 async function getMessages(locale: string) {
@@ -24,11 +25,15 @@ async function getMessages(locale: string) {
   }
 }
 
-export default async function RootLayout(props: {
+export default async function RootLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = props.params;
+  const { locale } = params; 
+
   const messages = await getMessages(locale);
 
   return (
@@ -36,7 +41,7 @@ export default async function RootLayout(props: {
       <body className={cairo.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          {props.children}
+          {children}
           <Footer />
         </NextIntlClientProvider>
       </body>
