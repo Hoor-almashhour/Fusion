@@ -9,11 +9,16 @@ import { PiStudentFill } from "react-icons/pi";
 import { RiTeamFill } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 
+
     interface Reason {
         title: string;
         text: string;
     }
- export default function CountryPage({ params }: { params: { locale: string; country: string } }) {
+    interface LocalPageProps {
+     params: { locale: string; country: string };
+    }
+
+export default function CountryPage({ params }: LocalPageProps) {
 
 
   const t = useTranslations('turkey');
@@ -32,16 +37,13 @@ import { FaUniversity } from "react-icons/fa";
     <main className={`flex flex-col items-center bg-white ${isArabic ? "rtl" : "ltr"}`}>
       {/* Hero Section */}
       <section className="relative md:w-full min-h-[80vh] bg-gray-50 flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl w-full px-6 md:px-16">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl w-full px-8 md:px-16">
           {/* الصورة */}
-          <div className="w-full md:w-1/2 flex justify-center mb-10 md:mt-16">
-            <Image
+          <div className="w-full md:w-1/2 flex justify-center mt-16 md:mt-16">
+            <img
               src="/Hero/heroImg.png"
               alt="Student"
-              width={440}
-              height={300}
-              style={{ height: "auto", width: "auto" }}
-              priority
+             className="w-96  object-cover"
             />
           </div>
           {/* النص */}
@@ -59,7 +61,7 @@ import { FaUniversity } from "react-icons/fa";
 
       {/* Stats Section */}
         <section className="w-full bg-white flex justify-center">
-            <div className="flex flex-wrap justify-center items-center flex-row-reverse gap-32 max-w-7xl py-10">
+            <div className="flex flex-wrap justify-center items-center px-3 flex-row-reverse gap-32 max-w-7xl py-10">
 
                 {/* التعداد السكاني */}
                 <div className="flex flex-col items-end justify-end">
