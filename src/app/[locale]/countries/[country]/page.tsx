@@ -9,15 +9,13 @@ import { PiStudentFill } from "react-icons/pi";
 import { RiTeamFill } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 
-interface Reason {
-  title: string;
-  text: string;
-}
-interface PageProps {
-  params: { locale: string; country: string };
-}
+    interface Reason {
+        title: string;
+        text: string;
+    }
+ export default function CountryPage({ params }: { params: { locale: string; country: string } }) {
 
-export default function CountryPage({ params }: PageProps) {
+
   const t = useTranslations('turkey');
   const locale = useLocale();
   const isArabic = locale === 'ar';
@@ -144,7 +142,7 @@ export default function CountryPage({ params }: PageProps) {
              {/* الخلفية شبه شفافة مع العلم */} 
                <div className="absolute inset-0 opacity-30 bg-[url('/images/turkey-flag.jpg')] bg-cover bg-center "></div>
                <div className="relative z-10 w-full md:w-1/2 flex justify-center ">
-                 <Image src="/images/student-turkey.png" alt="طالبة تدرس في تركيا"
+                 <img src="/images/student-turkey.png" alt="طالبة تدرس في تركيا"
                    width={350} height={350} className="rounded-full border-4 border-yellow-400 shadow-xl object-cover" /> 
                 </div>
             </div>
