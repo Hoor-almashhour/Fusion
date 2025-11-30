@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
+
 import UniversitiesSlider from "@/app/component/UniversitiesSlider/UniversitiesSlider";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { GrFormSchedule } from "react-icons/gr";
@@ -10,15 +10,16 @@ import { RiTeamFill } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 
 
-    interface Reason {
-        title: string;
-        text: string;
-    }
-    interface LocalPageProps {
-     params: { locale: string; country: string };
-    }
+interface Reason {
+  title: string;
+  text: string;
+}
 
-export default function CountryPage({ params }: LocalPageProps) {
+export default function CountryPage({
+  params,
+}: {
+params: { locale: string; country: string };
+}) {
 
 
   const t = useTranslations('turkey');
