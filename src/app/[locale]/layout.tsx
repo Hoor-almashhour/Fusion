@@ -2,10 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "react-phone-number-input/style.css";
-
 import Footer from "../component/Footer/Footer";
 import Navbar from "./Navbar/Navbar";
-
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
@@ -25,14 +23,14 @@ async function getMessages(locale: string) {
   }
 }
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params; 
+  export default async function RootLayout({
+    children,
+    params,
+  }: {
+    children: React.ReactNode;
+    params: { locale: string };
+  }) {
+    const { locale } = params; 
 
   const messages = await getMessages(locale);
 

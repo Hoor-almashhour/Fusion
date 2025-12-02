@@ -7,15 +7,16 @@ import Stats from "./components/Stats";
 import Universities from "./components/Universities";
 import WhyStudy from "./components/WhyStudy";
 
+export default function CountryPage({
+   params,
+    }: {
+  params: { locale: string; country: string };
+    }) {
+      const { country, locale } = params;
 
-export default function CountryPage({ params }: { params: Promise<{ locale: string; country: string }> }) {
-  
-  const resolved = use(params);
-  const { country } = resolved;
+    const t = useTranslations(country);
+   const isArabic = locale === "ar";
 
-  const t = useTranslations(country);
-  const locale = useLocale();
-  const isArabic = locale === "ar";
 
   return (
     <main className={`flex flex-col items-center bg-white ${isArabic ? "rtl" : "ltr"}`}>
