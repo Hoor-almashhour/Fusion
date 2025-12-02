@@ -169,7 +169,51 @@
       }
     ]
   },
-  "turkey": {
+
+   "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send",
+    "placeholder": {
+      "phone": " 0531 859 8487"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "section1Title": "Who We Are",
+    "section1Text": "Fusion Education was founded in 2018 and quickly became a major player in education consulting and study abroad. We have developed strong partnerships with over 100 prestigious universities in Turkey, Malaysia, Spain, and Germany, greatly increasing our ability to meet the diverse educational aspirations of students from the Middle East and North Africa region.",
+    
+    "section2Title": "Our Vision",
+    "section2Text": "Our vision is to empower students to study at Turkish universities that represent an essential step in building their future. We strive to offer a supportive academic environment while maintaining high service quality.",
+    
+    "section3Title": "Our Mission",
+    "section3Text": "Our mission is to help international students reach Turkish universities, provide the best academic discounts, assist them in choosing the right major, and offer full support through a professional and experienced team."
+  },
+  "footer": {
+    "helpTitle": "We will help you choose the right educational path",
+    "phonePlaceholder": "Phone number with country code",
+    "send": "Send",
+
+    "contactTitle": "Contact Information",
+    "workHours": "From 8 AM to 6 PM, Monday to Saturday",
+    "address": "Taksim / Istanbul",
+
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "universities": "Universities",
+    "about": "About Us",
+    "blog": "Blog",
+    "register": "Register",
+
+    "support": "SUPPORT",
+    "privacy": "PRIVACY POLICY",
+    "rights": "Copyright © 2025 Fusion Education. All rights reserved"
+  },
+
+     "turkey": {
     "heroTitle": "Study in Turkey: Advantages and Requirements for Turkish Universities",
 
      "stats": {
@@ -307,49 +351,8 @@
       ],
 
     "universitiesSection": "Top Universities in Turkey"
-    },
-   "contact": {
-    "title": "Contact Us",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone Number",
-    "message": "Message",
-    "send": "Send",
-    "placeholder": {
-      "phone": " 0531 859 8487"
-    }
-  },
-  "about": {
-    "title": "About Us",
-    "section1Title": "Who We Are",
-    "section1Text": "Fusion Education was founded in 2018 and quickly became a major player in education consulting and study abroad. We have developed strong partnerships with over 100 prestigious universities in Turkey, Malaysia, Spain, and Germany, greatly increasing our ability to meet the diverse educational aspirations of students from the Middle East and North Africa region.",
-    
-    "section2Title": "Our Vision",
-    "section2Text": "Our vision is to empower students to study at Turkish universities that represent an essential step in building their future. We strive to offer a supportive academic environment while maintaining high service quality.",
-    
-    "section3Title": "Our Mission",
-    "section3Text": "Our mission is to help international students reach Turkish universities, provide the best academic discounts, assist them in choosing the right major, and offer full support through a professional and experienced team."
-  },
-  "footer": {
-    "helpTitle": "We will help you choose the right educational path",
-    "phonePlaceholder": "Phone number with country code",
-    "send": "Send",
-
-    "contactTitle": "Contact Information",
-    "workHours": "From 8 AM to 6 PM, Monday to Saturday",
-    "address": "Taksim / Istanbul",
-
-    "quickLinks": "Quick Links",
-    "home": "Home",
-    "universities": "Universities",
-    "about": "About Us",
-    "blog": "Blog",
-    "register": "Register",
-
-    "support": "SUPPORT",
-    "privacy": "PRIVACY POLICY",
-    "rights": "Copyright © 2025 Fusion Education. All rights reserved"
   }
+
 
 }
 

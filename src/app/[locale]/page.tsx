@@ -7,7 +7,7 @@ import UniversitiesSlider from '../component/UniversitiesSlider/UniversitiesSlid
 import HeroStatsSection from '../component/HeroStatsSection/HeroStatsSection';
 import StepsSection from '../component/StepsSection/StepsSection';
 import LogoSlider from '../component/LogoSlider/LogoSlider';
-import Footer from '../component/Footer/Footer';
+
 
 
 

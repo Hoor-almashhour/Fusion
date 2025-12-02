@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaTimes, FaBars, FaTiktok } from 'react-icons/fa';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { IoChevronDown } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
@@ -17,7 +16,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
   const t = useTranslations('navbar');
-   const countries = t.raw('countriesList') as Record<string, string>;
+  const countries = t.raw('countriesList') as Record<string, string>;
   const locale = useLocale();
   const isArabic = locale === "ar";
  
