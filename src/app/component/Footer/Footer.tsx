@@ -119,7 +119,7 @@ export default function Footer() {
             <img
               src="/Logo/Logo.jpg"
               alt="FUSION logo"
-              className="w-44 h-auto rounded-full"
+              className="w-44 h-44 rounded-full"
             />
 
             <div className="flex gap-4 text-xl">

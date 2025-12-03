@@ -11,7 +11,7 @@ export default function WhyStudy({ t }: TProps) {
   const reasons = t.raw("reasons") as Reason[];
 
   return (
-    <section className="bg-white max-w-7xl   border-t-2 border-[#F9680E]  py-16 shadow-2xl px-6 md:px-20 rounded-lg mx-3 ">
+    <section className="bg-white md:max-w-7xl w-full border-t-2 border-[#F9680E] mx-7 py-16 shadow-2xl px-6 md:px-20 rounded-lg md:mx-3 ">
       <Intro t={t} />
       <h2 className="text-3xl font-bold text-[#B10B0B] text-right">{t("whyStudyTitle")}</h2>
       <p className="text-gray-700 text-lg leading-8 mt-6 text-right">{t("whyStudyDesc")}</p>

@@ -56,7 +56,7 @@ const ContactPage = () => {
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6022.9325074818835!2d28.84075!3d40.993167!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v1764189854238!5m2!1sen!2str"
              width="575" height="450" 
-             className='p-2'
+             className='p-2 max-w-full'
               loading="lazy"
                >
 
