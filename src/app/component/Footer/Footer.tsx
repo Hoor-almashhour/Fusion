@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import { FaTiktok } from "react-icons/fa6";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -116,10 +117,14 @@ export default function Footer() {
 
           {/* الشعار ووسائل التواصل */}
           <div className="flex flex-col items-center md:items-end space-y-4">
-            <img
+            <Image
               src="/Logo/Logo.jpg"
               alt="FUSION logo"
-              className="w-44 h-44 rounded-full"
+              className="w-44 h-44
+               rounded-full"
+               width={144}
+               height={144}
+               priority
             />
 
             <div className="flex gap-4 text-xl">
