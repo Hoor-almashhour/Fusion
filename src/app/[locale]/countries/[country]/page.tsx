@@ -6,15 +6,22 @@ import Stats from "./components/Stats";
 import Universities from "./components/Universities";
 import WhyStudy from "./components/WhyStudy";
 
-interface CountryPageProps {
-  params: {
-    locale: string;
-    country: string;
-  };
+export async function generateStaticParams() {
+  // يمكنك إرجاع كل الدول المتاحة هنا
+  return [
+    { country: "turkey", locale: "en" },
+    { country: "turkey", locale: "ar" },
+    // إضافة دول أخرى هنا
+  ];
 }
 
-export default function CountryPage({ params }: CountryPageProps) {
+export default function CountryPage({
+params,
+    }: {
+params: { locale: string; country: string };
+    }) {
   const { country, locale } = params;
+
 
   const t = useTranslations(country);
   const isArabic = locale === "ar";
