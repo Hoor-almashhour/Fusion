@@ -5,6 +5,10 @@ import StudyStepsInTurkey from "@/app/component/StudyStepsInTurkey/StudyStepsInT
 
 
 
+
+
+
+
 export default function StudyStepsPage() {
   return (
     <main>

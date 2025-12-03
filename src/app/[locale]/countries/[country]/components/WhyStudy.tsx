@@ -1,5 +1,4 @@
 
-
 import { TProps } from "@/app/types/translation";
 import Intro from "./Intro";
 

@@ -11,7 +11,10 @@ import LanguageSwitcher from '@/app/component/LanguageSwitcher/LanguageSwitcher'
 
 
 
+
+
 const Navbar = () => {
+
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
@@ -20,8 +23,6 @@ const Navbar = () => {
   const locale = useLocale();
   const isArabic = locale === "ar";
  
-
-
   const links = [
     { href: "/", label: t('home') },
     { href: "/study-steps", label: t('steps')},
