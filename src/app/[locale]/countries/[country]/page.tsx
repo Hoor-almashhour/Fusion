@@ -28,7 +28,7 @@ export default async function CountryPage({
 
   return (
     <main className={`flex flex-col items-center bg-white ${isArabic ? "rtl" : "ltr"}`}>
-      <Hero t={t} />
+      <Hero t={t}  locale={locale}  />
       <Stats t={t} />
       <WhyStudy t={t} />
       <Universities t={t} />
