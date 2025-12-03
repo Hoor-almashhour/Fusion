@@ -1,7 +1,6 @@
 
 import { useTranslations } from "next-intl";
 import Hero from "./components/Hero";
-
 import Stats from "./components/Stats";
 import Universities from "./components/Universities";
 import WhyStudy from "./components/WhyStudy";
@@ -9,19 +8,18 @@ import WhyStudy from "./components/WhyStudy";
 export async function generateStaticParams() {
   // يمكنك إرجاع كل الدول المتاحة هنا
   return [
-    { country: "turkey", locale: "en" },
-    { country: "turkey", locale: "ar" },
+    { country: "turkey" },
+   
     // إضافة دول أخرى هنا
   ];
 }
 
 export default function CountryPage({
-params,
-    }: {
-params: { locale: string; country: string };
-    }) {
+  params,
+}: {
+  params: { locale: string; country: string };
+}) {
   const { country, locale } = params;
-
 
   const t = useTranslations(country);
   const isArabic = locale === "ar";
