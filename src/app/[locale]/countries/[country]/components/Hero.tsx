@@ -1,10 +1,14 @@
 
-import { useLocale } from "next-intl";
-import { TProps } from "@/app/types/translation";
-import { FaUniversity } from "react-icons/fa";
 
-export default function Hero({ t }: TProps) {
-  const locale = useLocale();
+import { TProps } from "@/app/types/translation";
+import { useLocale } from "next-intl";
+
+import { FaUniversity } from "react-icons/fa";
+interface HeroProps extends TProps {
+  locale: string;
+}
+
+export default function Hero({ t, locale }: HeroProps) {
   const isArabic = locale === "ar";
 
   return (
