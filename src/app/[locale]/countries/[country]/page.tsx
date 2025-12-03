@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Universities from "./components/Universities";
 import WhyStudy from "./components/WhyStudy";
+import { getTranslations } from "next-intl/server";
 
 export async function generateStaticParams() {
   // يمكنك إرجاع كل الدول المتاحة هنا
@@ -14,14 +15,14 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function CountryPage({
+export default async function CountryPage({
   params,
 }: {
-  params: { locale: string; country: string };
+  params: Promise<{ locale: string; country: string }>;
 }) {
-  const { country, locale } = params;
+  const { locale, country } = await params;
 
-  const t = useTranslations(country);
+    const t = await getTranslations({ locale, namespace: country });
   const isArabic = locale === "ar";
  
 
