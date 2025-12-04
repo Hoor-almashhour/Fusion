@@ -6,6 +6,7 @@ import Footer from "../component/Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 
 const cairo = Cairo({ subsets: ["latin"] });
 
@@ -18,22 +19,20 @@ export const metadata: Metadata = {
 async function getMessages(locale: string) {
   try {
     return (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {
-    console.error("Translation file missing:", locale);
+  } catch {
     return notFound();
   }
 }
 
-
-export default async function RootLayout({
+ export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
-  
+  const { locale } = params; 
+
   const messages = await getMessages(locale);
 
 
