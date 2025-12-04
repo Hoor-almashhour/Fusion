@@ -7,20 +7,25 @@ import WhyStudy from "./components/WhyStudy";
 export async function generateStaticParams() {
   return [
     { country: "turkey" },
+    { country: "malaysia" },
+    { country: "cyprus" },
     
   ];
 }
 
 
-export default async function CountryPage({ params }: { params: Promise<{ locale: string; country: string }> }) {
+export default async function CountryPage({
+  params,
+}: {
+  params: { locale: string; country: string };
+}) {
 
-  const { locale, country } = await params;
+  const { locale, country } = params;
 
   const t = await getTranslations({
     locale,
     namespace: country,
   });
-
   const isArabic = locale === "ar";
 
   return (

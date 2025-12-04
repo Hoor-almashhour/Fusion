@@ -6,7 +6,6 @@ import Footer from "../component/Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import type { ReactNode } from "react";
 
 const cairo = Cairo({ subsets: ["latin"] });
 
@@ -29,9 +28,9 @@ async function getMessages(locale: string) {
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params; 
+  const { locale } = await params;
 
   const messages = await getMessages(locale);
 

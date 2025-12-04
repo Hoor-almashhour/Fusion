@@ -1,9 +1,6 @@
 import { TProps } from "@/app/types/translation";
 
 
-
-
-
 export default function Intro({ t }: TProps) {
   return (
     <section >
