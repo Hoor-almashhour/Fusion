@@ -17,11 +17,13 @@ export const metadata: Metadata = {
 
 async function getMessages(locale: string) {
   try {
-    return (await import(`../../messages/${locale}.json`)).default;
-  } catch {
+    return (await import(`@/messages/${locale}.json`)).default;
+  } catch (error) {
+    console.error("Translation file missing:", locale);
     return notFound();
   }
 }
+
 
  export default async function RootLayout({
   children,
