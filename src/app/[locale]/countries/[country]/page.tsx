@@ -14,18 +14,15 @@ export async function generateStaticParams() {
 }
 
 
-export default async function CountryPage({
-  params,
-}: {
-  params: { locale: string; country: string };
-}) {
+export default async function CountryPage({ params }: { params: Promise<{ locale: string; country: string }> }) {
 
-  const { locale, country } = params;
+  const { locale, country } = await params;
 
   const t = await getTranslations({
     locale,
     namespace: country,
   });
+
   const isArabic = locale === "ar";
 
   return (
