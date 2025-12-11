@@ -11,7 +11,7 @@ interface StatItem {
 }
 
 export default function HeroStatsSection() {
-  const t = useTranslations("common.heroStats");
+  const t = useTranslations("heroStats");
    const locale = useLocale();
     const isArabic = locale === "ar";
 
