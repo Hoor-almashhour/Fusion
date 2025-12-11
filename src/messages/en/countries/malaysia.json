@@ -1,0 +1,243 @@
+{
+    
+    "heroTitle": "Study in Malaysia",
+
+
+    "about": {
+
+    "title": "About Malaysia",
+
+    "text": "Malaysia, the jewel of Southeast Asia, is a unique study destination that attracts students from all over the world. Malaysia boasts a rich cultural diversity, stunning natural scenery, advanced infrastructure, and a prestigious education system, all at an affordable cost. Malaysia has a rich and diverse culture, home to a mix of ethnic groups such as Malays, Chinese, Indians, and many other nationalities. Malaysia is also a safe and stable country with low crime rates. It also has advanced infrastructure, including an efficient transportation network and high-speed internet services.",
+
+    "gallery": [
+    "/images/malaysia-1.jpg",
+
+    "/images/malaysia-2.jpg",
+
+    "/images/malaysia-3.jpg",
+
+    "/images/malaysia-4.jpg",
+
+    "/images/malaysia-5.jpg",
+
+    "/images/malaysia-6.jpg"
+
+    ]
+
+    },
+
+    "stats": {
+    "population": "Population",
+
+    "populationValue": "33,181,000",
+
+    "academicYear": "Academic Year",
+
+    "academicYearValue": "January - May - September",
+
+    "universitiesCount": "Number of Universities",
+
+    "universitiesCountValue": "27",
+
+    "studentsCount": "Number of Students",
+
+    "studentsCountValue": "1,300,000+",
+
+    "internationalStudents": "International Students",
+
+    "internationalStudentsValue": "170,000+"
+
+    },
+
+    "Advantages": {
+    "Title": "8 Advantages of Studying in Malaysia",
+    "items": [
+        {
+        "Title": "High-Quality Education",
+
+        "Text": "Malaysian universities offer world-class education with advanced teaching and training methods."
+
+        },
+
+        {
+        "Title": "Affordable Cost",
+
+        "Text": "Malaysia is an excellent choice for students due to its reasonable tuition fees and low cost of living compared to many other countries."
+
+        },
+
+        {
+        "Title": "Multicultural Country",
+
+        "Text": "Malaysia offers a rich and diverse cultural environment that helps students adapt and broaden their horizons."
+
+        },
+
+        {
+        "Title": "Prestigious Universities",
+
+        "Text": "Malaysia is home to internationally ranked universities offering strong academic programs with international accreditation."
+
+        },
+
+        {
+        "Title": "Safety and Stability",
+
+        "Text": "Malaysia is a safe country with low crime rates, ensuring a suitable environment for studying and living."
+
+        },
+
+        {
+        "title": "Advanced Infrastructure",
+
+        "text": "Malaysia offers excellent transportation, high-speed internet, and modern facilities that make the study experience much easier."
+
+        },
+
+        {
+        "title": "Easy University Admission",
+
+        "text": "Most Malaysian universities offer clear and straightforward admission requirements."
+
+        },
+
+        {
+        "title": "Distinguished Geographical Location",
+
+        "text": "Malaysia is located in the heart of Southeast Asia, making travel to and from the country extremely convenient."
+
+        }
+
+    ]
+   },
+
+    "educationSystem": {
+    "title": "The Education System in Malaysia",
+
+    "text": "The Malaysian education system is based on several categories of educational institutions that provide diverse options for students.",
+
+    "points": [
+    "Private Universities",
+
+    "Public Universities",
+
+    "Branches of International Universities"
+
+    ]
+
+    },
+
+    "costs": {
+    "title": "The Cost of Studying at Malaysian Universities",
+
+    "text": "University education in Malaysia is accessible to everyone, especially students seeking high-quality education at reasonable costs.",
+
+    "list": [
+    "Tuition fees at private universities range from US$3,000 to US$6,000 per year.",
+
+    "Some engineering and medical programs may be more expensive.",
+
+    "The cost of living is low compared to European countries."
+
+    ]
+
+    },
+
+    "housing": {
+    "title": "Types of Accommodation in Malaysia",
+
+    "text": "Malaysia offers a variety of accommodation options suitable for international students.",
+
+    "onCampus": {
+    "title": "On-Campus Accommodation",
+
+    "points": [
+
+    "Proximity to necessary university facilities.",
+
+    "Easy access to classrooms.",
+
+    "A suitable environment for focusing on studies.",
+
+    "Availability of laundry services and recreational spaces.",
+
+    "24-hour security."
+
+    ]
+
+    },
+
+    "offCampus": {
+
+    "title": "Off-Campus Accommodation",
+
+    "text": "Off-campus accommodation offers students greater freedom and lower costs compared to on-campus accommodation. Rents start from RM500 per month and may be lower when sharing accommodation with other students."
+
+    }
+
+    },
+
+    "requirements": {
+    "title": "Admission Requirements for Malaysian Universities",
+
+    "items": [
+
+        "Proof of English language proficiency.",
+
+        "Submit letters of recommendation and a statement of purpose.",
+
+        "Submit a high school diploma, a copy of your passport, and a personal photograph.",
+
+        "Some universities may require additional requirements depending on the field of study."
+
+        ]
+        },
+
+        "tips": {
+        "title": "5 Tips Before Traveling to Study in Malaysia",
+
+        "items": [
+
+        {
+        "title": "Explore Malaysia Before You Travel",
+
+        "text": "Learn about the country's culture, climate, and customs to facilitate adjustment upon arrival."
+
+        },
+
+        {
+        "title": "Choose Your Major Carefully",
+
+        "text": "Choose a program that aligns with your passions and future career goals."
+
+        },
+
+        {
+        "title": "Plan your budget carefully",
+
+        "text": "Make sure you organize your finances and estimate living costs before traveling."
+
+        },
+
+        {
+        "title": "Get a student visa",
+
+        "text": "You need a student permit to study and you can apply through the Malaysian embassy after you receive acceptance."
+
+        },
+
+        {
+        "title": "Connect with students and graduates",
+
+        "text": "Connecting with former students gives you a clear idea of ​​life and studying in Malaysia."
+
+        }
+    ]
+
+    },
+
+    "universitiesSection": "Top universities in Malaysia"
+
+    
+}
+

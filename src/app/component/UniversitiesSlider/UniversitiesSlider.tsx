@@ -4,9 +4,11 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { universities } from "@/app/data/universities";
+
 import UniversityCard from "../UniversityCard/UniversityCard";
 import { useTranslations } from "next-intl";
+import { universities } from "@/app/data/universities";
+
 
 
 

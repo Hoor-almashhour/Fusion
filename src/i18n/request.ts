@@ -10,9 +10,18 @@ export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
   if (!hasLocale(routing.locales , locale)) locale = routing.defaultLocale;
 
+   const common = (await import(`@/messages/${locale}/common.json`)).default;
+  const turkey = (await import(`@/messages/${locale}/countries/turkey.json`)).default;
+  const malaysia = (await import(`@/messages/${locale}/countries/malaysia.json`)).default;
+
   return {
     locale,
-    messages: (await import(`@/messages/${locale}.json`)).default,
+    messages: {
+      ...common,
+      countries: {
+        turkey,
+        malaysia
+      }
+    }
   };
-  
 });

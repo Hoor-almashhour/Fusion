@@ -28,7 +28,7 @@ export default function StudyStepsInTurkey() {
       className="relative w-full bg-gradient-to-b from-white to-gray-50 overflow-hidden"
     >
       {/* الخلفية */}
-      <div className="hidden md:absolute bottom-55 right-12 w-full h-full">
+      <div className="hidden  md:block md:absolute md:bottom-56 md:right-17 w-full h-full">
         <img
           src="/StudySteps/bg.png"
           alt="background"

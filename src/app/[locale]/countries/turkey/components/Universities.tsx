@@ -1,7 +1,7 @@
-
-
 import UniversitiesSlider from "@/app/component/UniversitiesSlider/UniversitiesSlider";
 import { TProps } from "@/app/types/translation";
+
+
 
 
 export default function Universities({ t }: TProps) {

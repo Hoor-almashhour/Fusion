@@ -1,4 +1,4 @@
-
+"use client";
 
 import { FaEarthAmericas } from "react-icons/fa6";
 import { GrFormSchedule } from "react-icons/gr";
@@ -6,6 +6,9 @@ import { PiStudentFill } from "react-icons/pi";
 import { RiTeamFill } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 import { TProps } from "@/app/types/translation";
+import { useTranslations } from "next-intl";
+
+
 
 interface StatItemProps {
   icon: React.ReactNode;
@@ -13,7 +16,8 @@ interface StatItemProps {
   value: string | number;
 }
 
-export default function Stats({ t }: TProps) {
+export default function MalaysiaStats() {
+  const t = useTranslations("countries.malaysia");
   const population = t("stats.populationValue", { value: "91+" });
   const academicYearValue = t("stats.academicYearValue");
   const universities = t("stats.universitiesCountValue", { value: "200+" });

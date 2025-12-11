@@ -17,11 +17,23 @@ export const metadata: Metadata = {
 
 async function getMessages(locale: string) {
   try {
-    return (await import(`@/messages/${locale}.json`)).default;
-  } catch {
+    const common = (await import(`@/messages/${locale}/common.json`)).default;
+    const turkey = (await import(`@/messages/${locale}/countries/turkey.json`)).default;
+    const malaysia = (await import(`@/messages/${locale}/countries/malaysia.json`)).default;
+
+   return {
+        ...common,
+      countries: {
+        turkey,
+        malaysia
+      }
+    };
+  } catch (error) {
+    console.error("Translation load error:", error);
     return notFound();
   }
 }
+
 
  export default async function RootLayout({
   children,
