@@ -45,7 +45,7 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-   params: { locale: string; country?: string }; // اجعل country اختياري هنا
+   params: { locale: string; country?: string }; 
 }) {
   const { locale } = params;
 

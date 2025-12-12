@@ -27,12 +27,12 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: Promise<{ locale: string; country: string }>; // ← أضف Promise هنا
+  params: { locale: string; country: string };
 }
 
-// وغير هنا: أضف await قبل params
+
 export default async function Page({ params }: PageProps) {
-  const { locale, country } = await params;
+  const { locale, country } =  params;
 
   const t = await getTranslations({
     locale,
