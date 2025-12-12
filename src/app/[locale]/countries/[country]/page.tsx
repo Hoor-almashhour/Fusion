@@ -27,12 +27,11 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { locale: string; country: string };
+  params: Promise<{ locale: string; country: string }>
 }
 
-
 export default async function Page({ params }: PageProps) {
-  const { locale, country } =  params;
+  const { locale, country } =  await params;
 
   const t = await getTranslations({
     locale,
@@ -52,7 +51,7 @@ export default async function Page({ params }: PageProps) {
         </>
       )}
 
-      {country === "malaysia" &&  t &&(
+      {country === "malaysia" && (
         <>
           <MalaysiaHero t={t}     />
           <MalaysiaAbout t={t}      />
@@ -62,7 +61,7 @@ export default async function Page({ params }: PageProps) {
           <Costs t={t}     />
           <Housing t={t}    />
           <Requirements t={t}     />
-          <Tips t={t}     />
+          <Tips t={t}   />
         </>
       )}
       
