@@ -35,16 +35,17 @@ async function getMessages(locale: string) {
 }
 
 
- export default async function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; country?: string }>; 
 }) {
   const { locale } = await params;
-
+  
   const messages = await getMessages(locale);
+
 
 
   return (
