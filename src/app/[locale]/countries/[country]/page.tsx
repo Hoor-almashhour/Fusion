@@ -33,16 +33,20 @@ export default async function CountryPage({
 
   const { locale, country } = await params;
 
-  const t = await getTranslations({
-    locale,
-    namespace: `countries.${country}`
-  });
+  const t =
+    country === "turkey"
+      ? await getTranslations({
+          locale,
+          namespace: `countries.turkey`,
+        })
+      : null;
+
 
   const isArabic = locale === "ar";
 
   return (
     <main className={`flex flex-col items-center bg-white ${isArabic ? "rtl" : "ltr"}`}>
-      {country === "turkey" && (
+      {country === "turkey" && t && (
         <>
           <Hero t={t}    />
           <Stats t={t} />
