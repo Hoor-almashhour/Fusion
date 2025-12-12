@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     "An integrated platform to support international students applying to Turkish Universities",
 };
 
+export const  viewport = {
+  
+  viewport: 'width=device-width, initial-scale=1',
+};
+
 async function getMessages(locale: string) {
   try {
     const common = (await import(`@/messages/${locale}/common.json`)).default;
