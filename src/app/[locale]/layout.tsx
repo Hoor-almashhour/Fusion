@@ -45,10 +45,10 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string; country?: string }>; 
+   params: { locale: string; country?: string }; // اجعل country اختياري هنا
 }) {
-  const { locale } = await params;
-  
+  const { locale } = params;
+
   const messages = await getMessages(locale);
 
 

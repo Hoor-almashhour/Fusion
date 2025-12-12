@@ -3,12 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
 
-const nextConfig: NextConfig = {
-    reactStrictMode:true ,
-    experimental:{
-        forceSwcTransforms:true,
-    }
-};
+const nextConfig: NextConfig = {};
 
 
 export default withNextIntl(nextConfig);

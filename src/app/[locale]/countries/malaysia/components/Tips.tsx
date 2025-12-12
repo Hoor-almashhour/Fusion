@@ -1,4 +1,4 @@
-"use client";
+
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -7,9 +7,8 @@ type TipItem = {
   text: string;
 };
 
-export default function Tips() {
+export default function Tips({ t }: TProps) {
   const locale = useLocale();
-  const t = useTranslations("countries.malaysia");
   const isArabic = locale === "ar";
 
   const tips = t.raw("tips.items") as TipItem[];

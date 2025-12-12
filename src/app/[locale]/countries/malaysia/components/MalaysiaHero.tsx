@@ -1,12 +1,11 @@
-"use client";
+
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
 
 import { FaUniversity } from "react-icons/fa";
 
-export default function MalaysiaHero() {
+export default function MalaysiaHero({ t }: TProps) {
   const locale = useLocale();
-  const t = useTranslations("countries.malaysia");
   const isArabic = locale === "ar";
 
   return (

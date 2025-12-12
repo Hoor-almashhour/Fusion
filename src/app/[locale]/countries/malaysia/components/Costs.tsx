@@ -1,11 +1,11 @@
-"use client";
+
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function Costs() {
-    const t = useTranslations("countries.malaysia");
-     const locale = useLocale();
-    const isArabic = locale === "ar";
+export default function Costs({ t }: TProps) {
+  const locale = useLocale();
+  const isArabic = locale === "ar";
+
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
       <h2 className="text-2xl font-semibold text-center mb-6">

@@ -1,4 +1,4 @@
-"use client";
+
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -7,10 +7,9 @@ type AdvantageItem = {
   text: string;
 };
 
-export default function Advantages() {
-    const t = useTranslations("countries.malaysia");
-    const locale = useLocale();
-    const isArabic = locale === "ar";
+export default function Advantages({ t }: TProps) {
+  const locale = useLocale();
+  const isArabic = locale === "ar";
     const items = t.raw("advantages.items") as AdvantageItem[];
 
   return (

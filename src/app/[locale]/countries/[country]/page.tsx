@@ -17,30 +17,27 @@ import Tips from "../malaysia/components/Tips";
 
 export async function generateStaticParams() {
   return [
-    { country: "turkey" },
-    { country: "malaysia" },
+     { locale: "ar", country: "turkey" },
+    { locale: "ar", country: "malaysia" },
+    { locale: "en", country: "turkey" },
+    { locale: "en", country: "malaysia" }
     
     
   ];
 }
 
+interface PageProps {
+  params: Promise<{ locale: string; country: string }>; // ← أضف Promise هنا
+}
 
-export default async function CountryPage({
-  params
-}: {
-  params: Promise<{ locale: string; country: string }>
-}) {
-
+// وغير هنا: أضف await قبل params
+export default async function Page({ params }: PageProps) {
   const { locale, country } = await params;
 
-  const t =
-    country === "turkey"
-      ? await getTranslations({
-          locale,
-          namespace: `countries.turkey`,
-        })
-      : null;
-
+  const t = await getTranslations({
+    locale,
+    namespace: `countries.${country}`,
+  });
 
   const isArabic = locale === "ar";
 
@@ -55,17 +52,17 @@ export default async function CountryPage({
         </>
       )}
 
-      {country === "malaysia" && (
+      {country === "malaysia" &&  t &&(
         <>
-          <MalaysiaHero  />
-          <MalaysiaAbout  />
-          <MalaysiaStats  />
-          <Advantages  />
-          <EducationSystem />
-          <Costs  />
-          <Housing />
-          <Requirements />
-          <Tips  />
+          <MalaysiaHero t={t}     />
+          <MalaysiaAbout t={t}      />
+          <MalaysiaStats t={t}      />
+          <Advantages t={t}      />
+          <EducationSystem  t={t}    />
+          <Costs t={t}     />
+          <Housing t={t}    />
+          <Requirements t={t}     />
+          <Tips t={t}     />
         </>
       )}
       

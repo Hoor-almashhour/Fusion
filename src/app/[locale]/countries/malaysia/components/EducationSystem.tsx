@@ -1,12 +1,12 @@
-"use client";
+
 
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function EducationSystem() {
-     const locale = useLocale();
-      const t = useTranslations("countries.malaysia");
-      const isArabic = locale === "ar";
+export default function EducationSystem({ t }: TProps) {
+  const locale = useLocale();
+  const isArabic = locale === "ar";
+
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
       <h2 className="text-2xl font-semibold text-center mb-6">

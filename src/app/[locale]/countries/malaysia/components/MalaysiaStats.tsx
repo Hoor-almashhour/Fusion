@@ -1,4 +1,4 @@
-"use client";
+
 
 import { FaEarthAmericas } from "react-icons/fa6";
 import { GrFormSchedule } from "react-icons/gr";
@@ -6,7 +6,7 @@ import { PiStudentFill } from "react-icons/pi";
 import { RiTeamFill } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 import { TProps } from "@/app/types/translation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 
 
@@ -16,8 +16,9 @@ interface StatItemProps {
   value: string | number;
 }
 
-export default function MalaysiaStats() {
-  const t = useTranslations("countries.malaysia");
+export default function MalaysiaStats({ t }: TProps) {
+  const locale = useLocale();
+  const isArabic = locale === "ar";
   const population = t("stats.populationValue", { value: "91+" });
   const academicYearValue = t("stats.academicYearValue");
   const universities = t("stats.universitiesCountValue", { value: "200+" });
