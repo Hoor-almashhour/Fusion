@@ -13,6 +13,12 @@ import Costs from "../malaysia/components/Costs";
 import Housing from "../malaysia/components/Housing";
 import Requirements from "../malaysia/components/Requirements";
 import Tips from "../malaysia/components/Tips";
+import TurkeyInfo from "../turkey/components/TurkeyInfo";
+import EnglishStudy from "../turkey/components/EnglishStudy";
+import PrivateUniversities from "../turkey/components/PrivateUniversities";
+import Postgraduate from "../turkey/components/Postgraduate";
+import TurkeyCosts from "../turkey/components/TurkeyCosts";
+import BulletSection from "../turkey/components/BulletSection";
 
 
 export async function generateStaticParams() {
@@ -47,6 +53,7 @@ export default async function Page({ params }: PageProps) {
           <Hero t={t}    />
           <Stats t={t} />
           <WhyStudy t={t} />
+         
           <Universities t={t} />
         </>
       )}
