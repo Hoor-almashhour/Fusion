@@ -36,9 +36,12 @@ export default function Footer() {
 
           <div className="flex flex-col sm:flex-row-reverse items-center gap-3 w-full md:w-auto">
             <input
+             dir={isArabic ? "rtl" : "ltr"}
               type="text"
               placeholder={t("phonePlaceholder")}
-              className="px-4 py-2 rounded-full text-gray-800 text-end focus:outline-none w-full sm:w-72 bg-white"
+              className="
+              px-4 py-2 rounded-full text-gray-800 text-end focus:outline-none w-full sm:w-72 bg-white 
+             "
             />
             <button className="bg-[#B10B0B] hover:bg-[#B10B0B] transition text-white font-semibold px-8 py-2 rounded-full">
               {t("send")}
