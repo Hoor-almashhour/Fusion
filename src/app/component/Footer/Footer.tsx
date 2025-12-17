@@ -125,6 +125,7 @@ export default function Footer() {
                width={144}
                height={144}
                priority
+               unoptimized
             />
 
             <div className="flex gap-4 text-xl">

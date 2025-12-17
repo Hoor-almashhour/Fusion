@@ -229,9 +229,49 @@
     ]
 
     },
-
-    "universitiesSection": "Top universities in Malaysia"
-
+    "universities": {
+        "title": "Top Universities in Malaysia",
+        "register": "Apply Now",
+        "more": "More Details",
+        "items": [
+            {
+                "name": "Monash University",
+                "description": "A leading international university offering strong programs in engineering and medicine.",
+                "location": "Kuala Lumpur, Malaysia",
+                "image": "/images-mal/uni/uni1.jpg"
+            },
+            {
+                "name": "Taylor’s University",
+                "description": "One of the best private universities, known for business and hospitality programs.",
+                "location": "Selangor, Malaysia",
+                "image": "/images-mal/uni/uni2.jpg"
+            },
+            {
+                "name": "Limkokwing University",
+                "description": "A creative university specializing in design, media, and technology.",
+                "location": "Cyberjaya, Malaysia",
+                "image": "/images-mal/uni/uni3.jpg"
+            },
+              {
+                "name": "UCSI University",
+                "description": "A leading private university in Malaysia, globally recognized for medicine, engineering, and business programs.",
+                "location": "Malaysia",
+                "image": "/images-mal/uni/uni4.jpg"
+             },
+              {
+                "name": "University of Cyberjaya (UoC)",
+                "description": "A modern university focused on technology, healthcare sciences, and business studies.",
+                "location": "Malaysia",
+                "image":  "/images-mal/uni/uni5.webp"
+             },
+              {
+                "name": "Asia Pacific University (APU)",
+                "description": "A top-ranked university specializing in IT, engineering, and artificial intelligence.",
+                "location": "Malaysia",
+                "image": "/images-mal/uni/uni6.jpg"
+             }
+        ]
+     }
     
 }
 

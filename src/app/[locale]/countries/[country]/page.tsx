@@ -8,17 +8,7 @@ import MalaysiaHero from "../malaysia/components/MalaysiaHero";
 import MalaysiaAbout from "../malaysia/components/MalaysiaAbout";
 import MalaysiaStats from "../malaysia/components/MalaysiaStats";
 import Advantages from "../malaysia/components/Advantages";
-import EducationSystem from "../malaysia/components/EducationSystem";
-import Costs from "../malaysia/components/Costs";
-import Housing from "../malaysia/components/Housing";
-import Requirements from "../malaysia/components/Requirements";
-import Tips from "../malaysia/components/Tips";
-import TurkeyInfo from "../turkey/components/TurkeyInfo";
-import EnglishStudy from "../turkey/components/EnglishStudy";
-import PrivateUniversities from "../turkey/components/PrivateUniversities";
-import Postgraduate from "../turkey/components/Postgraduate";
-import TurkeyCosts from "../turkey/components/TurkeyCosts";
-import BulletSection from "../turkey/components/BulletSection";
+import UniversitiesSection from "../malaysia/components/UniversitiesSection";
 
 
 export async function generateStaticParams() {
@@ -64,6 +54,7 @@ export default async function Page({ params }: PageProps) {
           <MalaysiaAbout t={t}      />
           <MalaysiaStats t={t}      />
           <Advantages t={t}      />
+          <UniversitiesSection  t={t}  />
         </>
       )}
       
