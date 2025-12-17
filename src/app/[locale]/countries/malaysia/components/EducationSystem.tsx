@@ -24,7 +24,8 @@ export default function EducationSystem({ t }: TProps) {
 
       <ul   dir={isArabic ? "rtl" : "ltr"}
        className= {`
-       list-disc pr-6 mt-4 text-gray-700 leading-7
+       list-disc p-6
+       mt-4 text-gray-700 leading-7
 
       ${ isArabic ? "text-right" : "text-left"
         }`}>
