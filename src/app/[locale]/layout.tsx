@@ -2,10 +2,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "react-phone-number-input/style.css";
-import Footer from "../component/Footer/Footer";
+
 import Navbar from "./Navbar/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Footer from "./Footer/Footer";
 
 const cairo = Cairo({ subsets: ["latin"] });
 

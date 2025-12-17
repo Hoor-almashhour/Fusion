@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer dir={isArabic ? "rtl" : "ltr"} className="bg-[#B10B0B] text-white">
-      {/* القسم العلوي */}
+    
       <div className="bg-[#F9680E] py-8 px-4 md:px-16 rounded-b-[40px]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <h2 className="text-lg md:text-xl font-semibold text-center md:text-right">
@@ -39,9 +39,10 @@ export default function Footer() {
              dir={isArabic ? "rtl" : "ltr"}
               type="text"
               placeholder={t("phonePlaceholder")}
-              className="
+              className={`
               px-4 py-2 rounded-full text-gray-800 text-end focus:outline-none w-full sm:w-72 bg-white 
-             "
+               ${isArabic ? "text-left": "text-right"
+              }`}
             />
             <button className="bg-[#B10B0B] hover:bg-[#B10B0B] transition text-white font-semibold px-8 py-2 rounded-full">
               {t("send")}
@@ -50,11 +51,11 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* القسم الأوسط */}
+    
       <div  className="py-12 px-4 md:px-16">
         <div  className="max-w-6xl mx-auto flex flex-1 gap-8 flex-col-reverse justify-center items-center md:flex-row-reverse md:justify-between md:gap-8 text-center md:text-left">
           
-          {/* معلومات التواصل */}
+         
           <div >
             <h3 className="text-lg font-semibold mb-4">{t("contactTitle")}</h3>
             <ul  className="space-y-3 text-sm">
@@ -118,17 +119,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* الشعار ووسائل التواصل */}
+        
           <div className="flex flex-col items-center md:items-end space-y-4">
-            <Image
+            <img
               src="/Logo/Logo.jpg"
               alt="FUSION logo"
               className="w-44 h-44
                rounded-full"
-               width={144}
-               height={144}
-               priority
-               unoptimized
+             
             />
 
             <div className="flex gap-4 text-xl">
@@ -154,7 +152,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* القسم السفلي */}
+     
       <div className="border-t border-white/20 py-4 text-xs text-center md:text-right px-4 md:px-16 flex flex-col-reverse md:flex-row justify-center items-center gap-2">
         <div className="flex gap-4">
           <Link href="#">{t("support")}</Link>
