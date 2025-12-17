@@ -12,6 +12,8 @@ import UniversitiesTypes from "./UniversitiesTypes";
 import PrivateUniversitiesAdvantages from "./PrivateUniversitiesAdvantages";
 import Housing from "./Housing";
 import { useLocale } from "next-intl";
+import Sources from "./Sources";
+import Scholarships from "./Scholarships";
 
 interface Reason {
   title: string;
@@ -32,7 +34,8 @@ export default function WhyStudy({ t }: TProps) {
        <div className="max-w-7xl mx-auto">
            <Intro t={t} />
         <h2
-          className={`text-3xl font-bold text-[#B10B0B] ${
+          className={`text-2xl
+             font-bold text-[#B10B0B] ${
             isArabic ? "text-right" : "text-left"
           }`}
         >
@@ -76,9 +79,10 @@ export default function WhyStudy({ t }: TProps) {
         <PrivateUniversities  t={t}  />
         <Postgraduate t={t} />
         <TurkeyCosts t={t} />
+        <Scholarships t={t} />
         <BulletSection t={t} titleKey="PreparationSteps.title" listKey="PreparationSteps.steps" />
         <BulletSection t={t} titleKey="TravelTips.title" listKey="TravelTips.tips" />
-      
+         <Sources t={t} />
        </div>
      
     </section>

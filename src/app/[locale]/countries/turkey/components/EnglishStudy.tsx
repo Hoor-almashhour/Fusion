@@ -11,7 +11,8 @@ export default function EnglishStudy({ t }: TProps) {
       className="md:max-w-7xl w-full py-16  md:px-5 rounded-lg"
     >
       <h2
-        className={`text-3xl font-bold text-[#B10B0B] ${
+        className={`text-2xl
+            font-bold text-[#B10B0B] ${
           isArabic ? "text-right" : "text-left"
         }`}
       >

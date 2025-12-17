@@ -1,6 +1,10 @@
 
 import { TProps } from "@/app/types/translation";
 import { useLocale, useTranslations } from "next-intl";
+import EducationSystem from "./EducationSystem";
+import Costs from "./Costs";
+import Housing from "./Housing";
+import Requirements from "./Requirements";
 
 type AdvantageItem = {
   title: string;
@@ -14,20 +18,32 @@ export default function Advantages({ t }: TProps) {
 
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
-      <h2 className="text-2xl font-semibold text-center mb-6">
-        {t("advantages.title")}
-      </h2>
+    
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-white  border-t-2 border-[#F9680E] shadow-2xl rounded-lg py-16 
+         px-6 md:px-5 md:max-w-7xl mx-4">
+            <h2  className={`text-2xl
+              font-bold text-[#B10B0B] ${
+              isArabic ? "text-right" : "text-left"
+            }`}>
+              {t("advantages.title")}
+            </h2>
         {items.map((item: AdvantageItem, i: number) => (
-          <div key={i} className="p-4 border rounded-lg shadow-sm bg-white">
-            <h3 className="text-lg font-semibold text-purple-600">
+          <div key={i} className={`p-4 
+            ${isArabic ? "text-right" : "text-left"
+            }`}>
+            <h3 className="text-lg font-semibold text-gray-800">
               {item.title}
             </h3>
             <p className="text-gray-700 mt-2 leading-7">{item.text}</p>
           </div>
         ))}
+          <EducationSystem  t={t}    />
+           <Costs t={t}     />
+           <Housing t={t}    />
+           <Requirements t={t}     />
       </div>
+     
     </section>
   );
 }

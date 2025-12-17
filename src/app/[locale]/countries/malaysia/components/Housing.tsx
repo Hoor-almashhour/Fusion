@@ -1,6 +1,5 @@
-
 import { TProps } from "@/app/types/translation";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 type Point = string;
 
@@ -8,32 +7,63 @@ export default function Housing({ t }: TProps) {
   const locale = useLocale();
   const isArabic = locale === "ar";
 
-  const points = t.raw("housing.onCampus.points") as Point[];
+  const onCampusPoints = t.raw("housing.onCampus.points") as Point[];
 
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
       
-      <h2 className="text-2xl font-semibold text-center mb-6">
+      {/* العنوان الرئيسي */}
+      <h2
+        className={`text-2xl mb-6 font-bold text-[#B10B0B] ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
         {t("housing.title")}
       </h2>
 
-      <p className="text-gray-700 leading-8">{t("housing.text")}</p>
+      {/* النص التعريفي */}
+      <p
+        className={`text-gray-700 leading-8 ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
+        {t("housing.text")}
+      </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">
+      {/* السكن الجامعي */}
+      <h3
+        className={`text-xl font-semibold mt-6 mb-2 text-[#F9680E] ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
         {t("housing.onCampus.title")}
       </h3>
 
-      <ul className="list-disc pr-6 text-gray-700 leading-7">
-        {points.map((p, i) => (
-          <li key={i}>{p}</li>
+      <ul
+        dir={isArabic ? "rtl" : "ltr"}
+        className={`list-disc pr-6 text-gray-700 leading-7 ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
+        {onCampusPoints.map((point, i) => (
+          <li key={i}>{point}</li>
         ))}
       </ul>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">
+      {/* السكن خارج الجامعة */}
+      <h3
+        className={`text-xl font-semibold mt-6 mb-2 text-[#F9680E] ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
         {t("housing.offCampus.title")}
       </h3>
 
-      <p className="text-gray-700 leading-7">
+      <p
+        className={`text-gray-700 leading-7 ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
         {t("housing.offCampus.text")}
       </p>
     </section>

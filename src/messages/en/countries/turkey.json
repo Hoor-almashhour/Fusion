@@ -424,7 +424,7 @@
     },
 
   "costs": {
-    "title": "Study Costs at Turkish Universities",
+    "title": "Study Costs at Turkish Universities:",
 
     "text": "Study costs in Turkey are significantly lower compared to European and American countries",
 
@@ -440,13 +440,13 @@
   },
 
   "scholarships": {
-      "title": "Turkish Scholarships",
+    "title": "Turkish Scholarships:",
 
-      "Program": "Turkish Scholarship Program",
+    "program": "Turkish Scholarship Program",
 
-      "Description": "The Turkish government offers full scholarships to over 4,000 international students annually",
+    "description" : "The Turkish government offers full scholarships to over 4,000 international students annually",
 
-      "Benefits": [
+      "benefits": [
       "Tuition Fees",
 
       "Accommodation",
@@ -457,11 +457,11 @@
 
       "Monthly Stipend"],
 
-      "Note": "Applications typically open in January of each year."
+      "note": "Applications typically open in January of each year."
 
     },
    "PreparationSteps": {
-      "title": "The Most Important Steps to Preparing for Studying in Turkey",
+      "title": "The Most Important Steps to Preparing for Studying in Turkey:",
 
       "steps":[
 
@@ -484,34 +484,34 @@
       ]
     },
 
-"TravelTips": {
-    "title": "Tips Before Traveling to Study in Turkey",
+  "TravelTips": {
+      "title": "Tips Before Traveling to Study in Turkey:",
 
-    "tips":[
+      "tips":[
 
-    "Checking Visa and Residence Requirements",
+      "Checking Visa and Residence Requirements",
 
-    "Learning the Basics of Turkish",
+      "Learning the Basics of Turkish",
 
-    "Preparing a Clear Financial Plan",
+      "Preparing a Clear Financial Plan",
 
-    "Searching for Accommodation in Advance",
+      "Searching for Accommodation in Advance",
 
-    "Understanding Turkish Culture",
+      "Understanding Turkish Culture",
 
-    "Obtaining Health Insurance",
+      "Obtaining Health Insurance",
 
-    "Exploring Tourist Attractions",
+      "Exploring Tourist Attractions",
 
-    "Preparing Appropriate Clothing for All Seasons",
+      "Preparing Appropriate Clothing for All Seasons",
 
-    "Contact Us for Academic Advising"
+      "Contact Us for Academic Advising"
 
-    ]
-  },
+      ]
+    },
 
-  "Sources": {
-    "title": "Sources",
+   "sources":{
+    "title":"Sources:",
 
     "list": [
       "Website of the Ministry of Higher Education in Türkiye",

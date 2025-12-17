@@ -30,14 +30,21 @@ export default function MalaysiaHero({ t }: TProps) {
             </h1>
 
            <div
-                className={`flex items-center justify-center gap-3 flex-col md:items-end ${
-                    isArabic ? "md:justify-end" : "md:justify-start"
-                }`}
->
-
+              className={`flex items-center justify-center gap-3 flex-col md:items-end ${
+                isArabic ? "md:justify-end" : "md:justify-start"
+              }`}
+            >
               <span className="block w-16 h-[2px] bg-[#F9680E]"></span>
-              <FaUniversity className="text-[#F9680E] text-3xl" />
+
+              <div className="flex items-center gap-2 text-[#F9680E]">
+                <FaUniversity className="text-3xl" />
+               
+              </div>
+               <span className="text-sm md:text-base font-medium text-[#F9680E]">
+                  {t("heroCapital")}
+                </span>
             </div>
+
         </div>
 
       </div>

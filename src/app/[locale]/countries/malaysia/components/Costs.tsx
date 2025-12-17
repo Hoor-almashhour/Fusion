@@ -8,12 +8,24 @@ export default function Costs({ t }: TProps) {
 
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
-      <h2 className="text-2xl font-semibold text-center mb-6">
+      <h2  className={`text-2xl mb-6
+              font-bold text-[#B10B0B] ${
+              isArabic ? "text-right" : "text-left"
+            }`}>
         {t("costs.title")}
       </h2>
-      <p className="text-gray-700 leading-7">{t("costs.text")}</p>
+      <p className={`  text-gray-700 leading-8
+        ${ isArabic ? "text-right" : "text-left"
+                }`}>
+        {t("costs.text")}</p>
 
-      <ul className="list-disc pr-6 mt-4 text-gray-700 leading-7">
+      <ul 
+        dir={isArabic ? "rtl" : "ltr"}
+       className= {`
+       list-disc pr-6 mt-4 text-gray-700 leading-7
+
+      ${ isArabic ? "text-right" : "text-left"
+        }`}>
         {t.raw("costs.list").map((p: string, i: number) => (
           <li key={i}>{p}</li>
         ))}

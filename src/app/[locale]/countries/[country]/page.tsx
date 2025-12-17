@@ -64,11 +64,6 @@ export default async function Page({ params }: PageProps) {
           <MalaysiaAbout t={t}      />
           <MalaysiaStats t={t}      />
           <Advantages t={t}      />
-          <EducationSystem  t={t}    />
-          <Costs t={t}     />
-          <Housing t={t}    />
-          <Requirements t={t}     />
-          <Tips t={t}   />
         </>
       )}
       

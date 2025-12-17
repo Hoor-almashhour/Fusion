@@ -21,26 +21,17 @@ export default function Intro({ t }: TProps) {
         </p>
 
        
-        <div
-          className={`relative w-full md:w-3/5 mx-auto bg-[#B10B0B] rounded-3xl overflow-hidden flex flex-col md:flex-row items-center p-6 md:p-15 ${
-            isArabic ? "md:justify-end" : "md:justify-start"
-          }`}
-        >
-       
+         <div className="relative w-full md:w-3/5 mx-auto bg-[#B10B0B] rounded-3xl overflow-hidden flex items-center p-6 md:p-10">
+          
+          {/* الخلفية */}
           <div className="absolute inset-0 opacity-30 bg-[url('/imagesflag/tr-flag.jpg')] bg-cover bg-center"></div>
 
-          <div
-            className={`relative 
-                md:w-full flex
-                 ${
-              isArabic ?  "md:justify-start" :  "md:justify-start"
-            }`}
-          >
+          {/* الصورة — ثابتة يمين */}
+          <div className={`relative md:w-full flex ${ isArabic ? "md:justify-start" : "md:justify-start"}`}>
             <img
               src="/imagesStats/Imgsrc.jpg"
               alt="Student studying in Turkey"
-              className="rounded-full shadow-xl object-cover w-2/4
-               "
+              className="rounded-full shadow-xl object-cover w-1/2"
             />
           </div>
         </div>

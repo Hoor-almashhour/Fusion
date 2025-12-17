@@ -10,7 +10,8 @@ export default function PrivateUniversities({ t }: TProps) {
         dir={isArabic ? "rtl" : "ltr"}
         className="md:max-w-7xl w-full  py-16 md:px-5 md:mx-3">
             
-      <h2 className={`text-3xl font-bold text-[#B10B0B] ${
+      <h2 className={`text-2xl
+      font-bold text-[#B10B0B] ${
             isArabic ? "text-right" : "text-left"
        } `} >
         {t("privateUniversities.title")}

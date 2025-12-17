@@ -10,7 +10,9 @@ export default function UniversitiesTypes({ t }: TProps) {
 
   return (
     <section className="md:max-w-7xl w-full py-16 md:px-5 md:mx-3 bg-white" dir={isArabic ? "rtl" : "ltr"}>
-      <h2 className={`text-3xl font-bold text-[#B10B0B] ${isArabic ? "text-right" : "text-left"}`}>
+
+      <h2 className={`text-2xl
+         font-bold text-[#B10B0B] ${isArabic ? "text-right" : "text-left"}`}>
         {t("universitiesTypes.title")}
       </h2>
 
@@ -18,7 +20,7 @@ export default function UniversitiesTypes({ t }: TProps) {
         {t("universitiesTypes.intro")}
       </p>
 
-      {/* الحكومة */}
+    
       <div className={`mt-10 ${isArabic ? "text-right" : "text-left"}`}>
         <h3 className="text-2xl font-semibold text-[#F9680E]">
           {t("universitiesTypes.government.title")}
@@ -36,7 +38,7 @@ export default function UniversitiesTypes({ t }: TProps) {
         </ul>
       </div>
 
-      {/* الخاصة */}
+   
       <div className={`mt-10 ${isArabic ? "text-right" : "text-left"}`}>
         <h3 className="text-2xl font-semibold text-[#F9680E]">
           {t("universitiesTypes.private.title")}

@@ -1,7 +1,7 @@
 {
     
     "heroTitle": "Study in Malaysia",
-
+    "heroCapital": "Capital: Kuala Lumpur",
 
     "about": {
 
@@ -10,17 +10,12 @@
     "text": "Malaysia, the jewel of Southeast Asia, is a unique study destination that attracts students from all over the world. Malaysia boasts a rich cultural diversity, stunning natural scenery, advanced infrastructure, and a prestigious education system, all at an affordable cost. Malaysia has a rich and diverse culture, home to a mix of ethnic groups such as Malays, Chinese, Indians, and many other nationalities. Malaysia is also a safe and stable country with low crime rates. It also has advanced infrastructure, including an efficient transportation network and high-speed internet services.",
 
     "gallery": [
-    "/images/malaysia-1.jpg",
-
-    "/images/malaysia-2.jpg",
-
-    "/images/malaysia-3.jpg",
-
-    "/images/malaysia-4.jpg",
-
-    "/images/malaysia-5.jpg",
-
-    "/images/malaysia-6.jpg"
+        "/images-mal/malaysia-1.jpg",
+        "/images-mal/malaysia-2.webp",
+        "/images-mal/malaysia-3.jpg",
+        "/images-mal/malaysia-4.webp",
+        "/images-mal/malaysia-5.jpg",
+        "/images-mal//malaysia-6.jpg"
 
     ]
 
@@ -49,66 +44,65 @@
 
     },
 
-    "Advantages": {
-    "Title": "8 Advantages of Studying in Malaysia",
-    "items": [
-        {
-        "Title": "High-Quality Education",
+      "advantages":{
+        "title": " Advantages of Studying in Malaysia",
+        "items": [
+                    {
+            "title": "High Educational Quality",
 
-        "Text": "Malaysian universities offer world-class education with advanced teaching and training methods."
+            "text": "Malaysian universities offer world-class education with advanced teaching and training methods."
 
-        },
+            },
 
-        {
-        "Title": "Affordable Cost",
+            {
+            "title": "Reasonable Cost",
 
-        "Text": "Malaysia is an excellent choice for students due to its reasonable tuition fees and low cost of living compared to many other countries."
+            "text": "One of the most important reasons why studying in Malaysia is an excellent choice is that university tuition fees in Malaysia are affordable for students."
 
-        },
+            },
 
-        {
-        "Title": "Multicultural Country",
+            {
+            "title": "Study in English",
 
-        "Text": "Malaysia offers a rich and diverse cultural environment that helps students adapt and broaden their horizons."
 
-        },
+            "text": "Although the official language of Malaysia is Malay (or Bahasa Melayu), English is also an official language and is widely used in education, daily life, and various transactions."
 
-        {
-        "Title": "Prestigious Universities",
+            },
 
-        "Text": "Malaysia is home to internationally ranked universities offering strong academic programs with international accreditation."
+            {
+            "title": "Malaysia is an Islamic country",
 
-        },
+            "text": "Malaysia is an Islamic country with a predominantly Muslim population and numerous mosques, which is a significant advantage for Arab students who wish to maintain their identity and avoid cultural alienation."
 
-        {
-        "Title": "Safety and Stability",
+            },
 
-        "Text": "Malaysia is a safe country with low crime rates, ensuring a suitable environment for studying and living."
+            {
+            "title": "Making Diverse Friendships",
 
-        },
+            "text": "Malaysian universities have students from various nationalities and cultures, allowing you to make strong and diverse friendships. Malaysians are also naturally friendly and welcoming to international students."
 
-        {
-        "title": "Advanced Infrastructure",
+            },
 
-        "text": "Malaysia offers excellent transportation, high-speed internet, and modern facilities that make the study experience much easier."
+            {
+            "title": "Studying in Peace and Security",
 
-        },
+            "text": "Malaysia is a peaceful, safe, and comfortable country, ensuring a calm and reassuring study period for students."
 
-        {
-        "title": "Easy University Admission",
+            },
 
-        "text": "Most Malaysian universities offer clear and straightforward admission requirements."
+            {
+            "title": "Diverse Fields of Study",
 
-        },
+            "text": "The Malaysian university education system is characterized by its diversity of fields of study, offering a wide range of disciplines to suit students' interests. These include medicine, engineering, technology, science, arts, economics, business, and more."
 
-        {
-        "title": "Distinguished Geographical Location",
+            },
 
-        "text": "Malaysia is located in the heart of Southeast Asia, making travel to and from the country extremely convenient."
+            {
+            "title": "A Temperate Tropical Climate",
 
-        }
-
-    ]
+            "text": "Malaysia has an average temperature of 25.4°C. The sun shines throughout the year, except during the tropical rainy season. If you dislike cold weather and enjoy outdoor activities and nature, Malaysia is the perfect destination for your studies."
+            }
+          ]
    },
 
     "educationSystem": {
@@ -194,7 +188,7 @@
         },
 
         "tips": {
-        "title": "5 Tips Before Traveling to Study in Malaysia",
+        "title": " Tips Before Traveling to Study in Malaysia",
 
         "items": [
 

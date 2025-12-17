@@ -1,19 +1,33 @@
-
 import { TProps } from "@/app/types/translation";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 export default function Requirements({ t }: TProps) {
   const locale = useLocale();
   const isArabic = locale === "ar";
+
+  const items = t.raw("requirements.items") as string[];
+
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
-      <h2 className="text-2xl font-semibold text-center mb-6">
+      
+     
+      <h2
+        className={`text-2xl mb-6 font-bold text-[#B10B0B] ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
         {t("requirements.title")}
       </h2>
 
-      <ul className="list-disc pr-6 text-gray-700 leading-7">
-        {t.raw("requirements.items").map((i: string, idx: number) => (
-          <li key={idx}>{i}</li>
+     
+      <ul
+        dir={isArabic ? "rtl" : "ltr"}
+        className={`list-disc pr-6 text-gray-700 leading-7 ${
+          isArabic ? "text-right" : "text-left"
+        }`}
+      >
+        {items.map((item, idx) => (
+          <li key={idx}>{item}</li>
         ))}
       </ul>
     </section>

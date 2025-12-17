@@ -1,37 +1,32 @@
 import { TProps } from "@/app/types/translation";
 import { useLocale } from "next-intl";
 
-interface Props extends TProps {
-  titleKey: string;
-  listKey: string;
-}
-
-export default function BulletSection({ t, titleKey, listKey }: Props) {
+export default function Sources({ t }: TProps) {
   const locale = useLocale();
   const isArabic = locale === "ar";
 
-  const items = t.raw(listKey) as string[];
+  const sources = t.raw("sources.list") as string[];
 
   return (
     <section
       dir={isArabic ? "rtl" : "ltr"}
-      className="md:max-w-7xl w-full py-16  md:px-5 rounded-lg"
+      className="md:max-w-7xl w-full py-16 md:px-5 md:mx-3 "
     >
       <h2
         className={`text-2xl
-             font-bold text-[#B10B0B] ${
+            font-bold text-[#B10B0B] ${
           isArabic ? "text-right" : "text-left"
         }`}
       >
-        {t(titleKey)}
+        {t("sources.title")}
       </h2>
 
       <ul
-        className={`mt-6 space-y-3 text-gray-700 list-disc list-inside ${
+        className={`mt-6 space-y-2 list-disc list-inside text-gray-700 ${
           isArabic ? "text-right" : "text-left"
         }`}
       >
-        {items.map((item, index) => (
+        {sources.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
