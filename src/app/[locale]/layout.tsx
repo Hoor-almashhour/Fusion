@@ -27,6 +27,7 @@ async function getMessages(locale: string) {
     const turkey = (await import(`@/messages/${locale}/countries/turkey.json`)).default;
     const malaysia = (await import(`@/messages/${locale}/countries/malaysia.json`)).default;
    const germany = (await import(`@/messages/${locale}/countries/germany.json`)).default;
+   const spain= (await import(`@/messages/${locale}/countries/spain.json`)).default;
      
    return {
         ...common,
@@ -34,6 +35,7 @@ async function getMessages(locale: string) {
         turkey,
         malaysia,
         germany,
+        spain
       }
     };
   } catch (error) {

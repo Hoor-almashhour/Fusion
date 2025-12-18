@@ -6,7 +6,8 @@
        "countriesList": {
         "turkey": "Turkey",
         "malaysia": "Malaysia",
-         "germany": "Germany"
+        "germany": "Germany",
+        "spain": "spain"
       },
     "universities": "Universities",
     "news": "News & Articles",
@@ -19,7 +20,8 @@
     "countries": {
     "turkey": "Turkey",
     "malaysia": "Malaysia",
-    "germany": "Germany"
+    "germany": "Germany",
+     "spain": "spain"
   },
   "hero": {
     "title": "Get your university admission in Turkey",

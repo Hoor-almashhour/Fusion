@@ -14,11 +14,14 @@ import UniversitiesSection from "../malaysia/components/UniversitiesSection";
 export async function generateStaticParams() {
   return [
      { locale: "ar", country: "turkey" },
-    { locale: "ar", country: "malaysia" },
+     { locale: "ar", country: "malaysia" },
      { locale: "ar", country: "germany"},
+     { locale: "ar", country: "spain"},
     { locale: "en", country: "turkey" },
     { locale: "en", country: "malaysia" },
-     { locale: "en" , country: "germany"},
+   { locale: "en" , country: "germany"},
+    { locale: "en" , country: "spain"},
+       
     
     
   ];
@@ -61,6 +64,15 @@ export default async function Page({ params }: PageProps) {
       )}
 
         {country === "germany"  && (
+        <>
+          <MalaysiaHero t={t}     />
+          <MalaysiaAbout t={t}      />
+          <MalaysiaStats t={t}      />
+          <Advantages t={t}      />
+          <UniversitiesSection  t={t}  />
+        </>
+      )}
+       {country === "spain"&& (
         <>
           <MalaysiaHero t={t}     />
           <MalaysiaAbout t={t}      />

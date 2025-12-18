@@ -6,7 +6,8 @@
       "countriesList": {
       "turkey": "تركيا",
       "malaysia": "ماليزيا",
-      "germany": " ألمانيا"
+      "germany": " ألمانيا",
+      "spain" : "اسبانيا"
       },
       "universities": "الجامعات",
       "news": "أخبار ومقالات",
@@ -18,7 +19,8 @@
     "countries": {
       "turkey": "تركيا",
       "malaysia": "ماليزيا",
-       "germany":" ألمانيا"
+      "germany":" ألمانيا",
+      "spain" : "اسبانيا"
     },
     "hero": {
       "title": "احصل على قبولك الجامعي في تركيا",
