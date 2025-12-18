@@ -15,8 +15,10 @@ export async function generateStaticParams() {
   return [
      { locale: "ar", country: "turkey" },
     { locale: "ar", country: "malaysia" },
+     { locale: "ar", country: "germany"},
     { locale: "en", country: "turkey" },
-    { locale: "en", country: "malaysia" }
+    { locale: "en", country: "malaysia" },
+     { locale: "en" , country: "germany"},
     
     
   ];
@@ -49,6 +51,16 @@ export default async function Page({ params }: PageProps) {
       )}
 
       {country === "malaysia" && (
+        <>
+          <MalaysiaHero t={t}     />
+          <MalaysiaAbout t={t}      />
+          <MalaysiaStats t={t}      />
+          <Advantages t={t}      />
+          <UniversitiesSection  t={t}  />
+        </>
+      )}
+
+        {country === "germany"  && (
         <>
           <MalaysiaHero t={t}     />
           <MalaysiaAbout t={t}      />

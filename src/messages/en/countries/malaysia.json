@@ -138,36 +138,60 @@
     },
 
     "housing": {
-    "title": "Types of Accommodation in Malaysia",
+        "title": "Types of Student Accommodation in Malaysia",
 
-    "text": "Malaysia offers a variety of accommodation options suitable for international students.",
+        "text": "Malaysia offers a variety of accommodation options suitable for international students, varying according to budget, location, and lifestyle.",
 
-    "onCampus": {
-    "title": "On-Campus Accommodation",
+        "types": [
 
-    "points": [
+        {
+        "key": "onCampus",
 
-    "Proximity to necessary university facilities.",
+        "title": "On-Campus Accommodation",
 
-    "Easy access to classrooms.",
+        "points": [
 
-    "A suitable environment for focusing on studies.",
+        "Proximity to necessary university facilities.",
 
-    "Availability of laundry services and recreational spaces.",
+        "Easy access to classrooms.",
 
-    "24-hour security."
+        "A suitable environment for focusing on studies.",
+
+        "Availability of laundry services and recreational spaces.",
+
+        "24-hour security."
+
+        ]
+        },
+
+        {
+        "key": "offCampus",
+
+        "title": "Off-Campus Accommodation",
+
+        "text": "Off-campus accommodation offers students more freedom compared to on-campus housing and is often less expensive when shared with other students. Rents start from RM500 per month."
+
+        },
+
+        {
+        "key": "privateHousing",
+
+        "title": "Private Housing",
+
+        "text": "Includes private apartments for students who prefer privacy and independence, and is a suitable option for those with a higher budget."
+
+        },
+
+        {
+        "key": "sharedHousing",
+
+        "title": "Shared Housing",
+
+        "text": "A popular option among international students to reduce costs, as the apartment is shared with other students of different nationalities."
+
+        }
 
     ]
-
-    },
-
-    "offCampus": {
-
-    "title": "Off-Campus Accommodation",
-
-    "text": "Off-campus accommodation offers students greater freedom and lower costs compared to on-campus accommodation. Rents start from RM500 per month and may be lower when sharing accommodation with other students."
-
-    }
 
     },
 

@@ -121,28 +121,32 @@ export default function Footer() {
 
         
           <div className="flex flex-col items-center md:items-end space-y-4">
-            <img
+            <Image
               src="/Logo/Logo.jpg"
               alt="FUSION logo"
-              className="w-44 h-44
+              className="
                rounded-full"
-             
+               width={144}
+               height={144}
+              
+               unoptimized
             />
 
             <div className="flex gap-4 text-xl">
-              <Link href="https://facebook.com" className="text-white">
+              <Link href="https://www.facebook.com/share/1MAs2ux3mt/"
+               className="text-white">
                 <FaFacebookF />
               </Link>
 
-              <Link href="https://instagram.com" className="text-white">
+              <Link href="https://www.instagram.com/fusion.edserv"
+               className="text-white">
                 <FaInstagram />
               </Link>
 
-              <Link href="https://tiktok.com" className="text-white">
+              <Link href= "https://www.tiktok.com/@fusion.edserv"
+               className="text-white">
                 <FaTiktok />
               </Link>
-
-              <FaTelegramPlane className="cursor-pointer" />
 
               <Link href="https://wa.me/905318598487" className="text-white">
                 <FaWhatsapp />

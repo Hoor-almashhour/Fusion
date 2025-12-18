@@ -15,6 +15,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const common = (await import(`@/messages/${locale}/common.json`)).default;
   const turkey = (await import(`@/messages/${locale}/countries/turkey.json`)).default;
   const malaysia = (await import(`@/messages/${locale}/countries/malaysia.json`)).default;
+    const germany = (await import(`@/messages/${locale}/countries/germany.json`)).default;
 
   return {
     locale,
@@ -22,7 +23,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...common,
       countries: {
         turkey,
-        malaysia
+        malaysia,
+        germany,
       }
     }
   };

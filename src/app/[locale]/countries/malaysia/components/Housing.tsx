@@ -1,13 +1,17 @@
 import { TProps } from "@/app/types/translation";
 import { useLocale } from "next-intl";
 
-type Point = string;
+type HousingType = {
+  title: string;
+  text?: string;
+  points?: string[];
+};
 
 export default function Housing({ t }: TProps) {
   const locale = useLocale();
   const isArabic = locale === "ar";
 
-  const onCampusPoints = t.raw("housing.onCampus.points") as Point[];
+  const housingTypes = t.raw("housing.types") as HousingType[];
 
   return (
     <section className="max-w-6xl mx-auto py-10 px-4">
@@ -23,49 +27,51 @@ export default function Housing({ t }: TProps) {
 
       {/* النص التعريفي */}
       <p
-        className={`text-gray-700 leading-8 ${
+        className={`text-gray-700 leading-8 mb-6 ${
           isArabic ? "text-right" : "text-left"
         }`}
       >
         {t("housing.text")}
       </p>
 
-      {/* السكن الجامعي */}
-      <h3
-        className={`text-xl font-semibold mt-6 mb-2 text-[#F9680E] ${
-          isArabic ? "text-right" : "text-left"
-        }`}
-      >
-        {t("housing.onCampus.title")}
-      </h3>
+      {/* أنواع السكن */}
+      {housingTypes.map((type, index) => (
+        <div key={index} className="mb-6">
+          
+          <h3
+            className={`text-xl font-semibold mb-2 text-[#F9680E] ${
+              isArabic ? "text-right" : "text-left"
+            }`}
+          >
+            {type.title}
+          </h3>
 
-      <ul
-        dir={isArabic ? "rtl" : "ltr"}
-        className={`list-disc pr-6 text-gray-700 leading-7 ${
-          isArabic ? "text-right" : "text-left"
-        }`}
-      >
-        {onCampusPoints.map((point, i) => (
-          <li key={i}>{point}</li>
-        ))}
-      </ul>
+          {/* في حال كان نص */}
+          {type.text && (
+            <p
+              className={`text-gray-700 leading-7 ${
+                isArabic ? "text-right" : "text-left"
+              }`}
+            >
+              {type.text}
+            </p>
+          )}
 
-      {/* السكن خارج الجامعة */}
-      <h3
-        className={`text-xl font-semibold mt-6 mb-2 text-[#F9680E] ${
-          isArabic ? "text-right" : "text-left"
-        }`}
-      >
-        {t("housing.offCampus.title")}
-      </h3>
-
-      <p
-        className={`text-gray-700 leading-7 ${
-          isArabic ? "text-right" : "text-left"
-        }`}
-      >
-        {t("housing.offCampus.text")}
-      </p>
+          {/* في حال كان نقاط */}
+          {type.points && (
+            <ul
+              dir={isArabic ? "rtl" : "ltr"}
+              className={`list-disc pr-6 text-gray-700 leading-7 ${
+                isArabic ? "text-right" : "text-left"
+              }`}
+            >
+              {type.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
     </section>
   );
 }
