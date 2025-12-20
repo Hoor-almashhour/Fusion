@@ -199,6 +199,18 @@
     "section3Title": "Our Mission",
     "section3Text": "Our mission is to help international students reach Turkish universities, provide the best academic discounts, assist them in choosing the right major, and offer full support through a professional and experienced team."
   },
+  
+  "blog": {
+    "title": "Blog & Articles",
+    "subtitle": "Latest articles about studying abroad and educational tips",
+    "readMore": "Read more",
+    "cta": {
+      "title": "Need help studying abroad?",
+      "button": "Contact us now"
+    }
+  },
+
+
   "footer": {
     "helpTitle": "We will help you choose the right educational path",
     "phonePlaceholder": "Phone number with country code",
