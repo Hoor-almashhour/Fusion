@@ -43,7 +43,7 @@ export default function StepsSection() {
               </div>
 
               <div className="relative mt-2">
-                <div className="absolute right-3 -top-10">
+                <div className="absolute -top-16  right-4  md:-top-16  md:right-6">
                   <div
                     className="w-12 h-12 rounded-full text-white flex items-center justify-center text-lg font-semibold"
                     style={{ backgroundColor: step.color }}

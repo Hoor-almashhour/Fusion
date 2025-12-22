@@ -39,7 +39,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
 
         <a
           href={`/#
-            /${post.slug}`}
+            ${post.slug}`}
           className="inline-block mt-3 text-sm text-[#B10B0B]
            font-medium"
         >
