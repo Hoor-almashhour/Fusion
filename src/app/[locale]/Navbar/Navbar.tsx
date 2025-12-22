@@ -70,7 +70,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
                <img
-               src="/Logo/logo2.png"
+               src="/logo/logo2.png"
                alt="FUSION logo"
               className="w-24 "
             />
