@@ -204,10 +204,9 @@
     "title": "Blog & Articles",
     "subtitle": "Latest articles about studying abroad and educational tips",
     "readMore": "Read more",
-    "cta": {
-      "title": "Need help studying abroad?",
-      "button": "Contact us now"
-    }
+     "prev": "Previous",
+    "next": "Next"
+    
   },
 
 
