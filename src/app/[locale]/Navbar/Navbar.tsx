@@ -72,9 +72,10 @@ const Navbar = () => {
                <Image
                 src="/logo/logo2.png"
                 alt="FUSION logo"
-                width={144}
-                height={144}
+                width={122}
+                height={122}
                 className="rounded-full object-cover"
+                priority
               />
               
             </div>
