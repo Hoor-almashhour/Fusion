@@ -132,7 +132,7 @@ export default function Footer() {
         
           <div className="flex flex-col items-center md:items-end space-y-4">
             <img
-              src="/logo/1.jpg"
+              src="/images/logo/1.jpg"
               alt="FUSION logo"
             className="rounded-full mx-auto  h-32 w-32"
           />
