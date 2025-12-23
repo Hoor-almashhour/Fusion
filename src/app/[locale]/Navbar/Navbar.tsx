@@ -72,7 +72,7 @@ const Navbar = () => {
                <img
                 src="/images/logo/fusion.png"
                 alt="FUSION logo"
-                className="rounded-full object-cover h-32 w-32"
+                className="rounded-full object-cover h-28 w-28"
               />
               
             </div>
