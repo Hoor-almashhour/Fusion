@@ -138,6 +138,7 @@ export default function Footer() {
             height={144}
             className="rounded-full mx-auto"
              priority
+             unoptimized
           />
 
 

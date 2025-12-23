@@ -76,6 +76,7 @@ const Navbar = () => {
                 height={122}
                 className="rounded-full object-cover"
                 priority
+                 unoptimized
               />
               
             </div>
