@@ -69,14 +69,10 @@ const Navbar = () => {
           <div className="flex justify-between items-center md:h-[140px] px-5">
             {/* Logo */}
             <div className="flex-shrink-0">
-               <Image
+               <img
                 src="/logo/logo2.png"
                 alt="FUSION logo"
-                width={122}
-                height={122}
-                className="rounded-full object-cover"
-                priority
-                 unoptimized
+                className="rounded-full object-cover h-32 w-32"
               />
               
             </div>
