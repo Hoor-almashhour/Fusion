@@ -92,41 +92,53 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-3 text-sm">
 
-              <li className="flex items-center justify-start gap-2">
-                 <FaHome className="text-yellow-400" />
+              <li className="flex items-center gap-2">
+              <FaHome className="text-yellow-400" />
+              <Link href="/" className="hover:underline">
                 {t("home")}
-              </li>
+              </Link>
+            </li>
 
               <li className="flex items-center justify-start gap-2">
                 <FaUniversity className="text-yellow-400" />
                 {t("universities")}
               </li>
 
-              <li className="flex items-center justify-start gap-2">
-                 <FaUser className="text-yellow-400" />
-                {t("about")}
+              <li className="flex items-center gap-2">
+                <FaUser className="text-yellow-400" />
+                <Link href="/about" className="hover:underline">
+                  {t("about")}
+                </Link>
               </li>
 
-              <li className="flex items-center justify-start gap-2">
-                 <FaPen className="text-yellow-400" />
-                {t("blog")}
-              </li>
 
-              <li className="flex items-center justify-start gap-2">
+              <li className="flex items-center gap-2">
+                <FaPen className="text-yellow-400" />
+                <Link href="/blog" className="hover:underline">
+                  {t("blog")}
+                </Link>
+             </li>
+
+              <li className="flex items-center gap-2">
                 <FaRegClipboard className="text-yellow-400" />
-                {t("register")}
-              </li>
+                <Link href="/contact" className="hover:underline">
+                  {t("register")}
+                </Link>
+              </li> 
+
             </ul>
           </div>
 
         
           <div className="flex flex-col items-center md:items-end space-y-4">
-            <img
-              src="/logo/1.jpg"
-              alt="FUSION logo"
-              className="rounded-full w-36"
-              
-            />
+            <Image
+            src="/logo/1.jpg"
+            alt="FUSION logo"
+             width={144}
+            height={144}
+            className="rounded-full mx-auto"
+          />
+
 
             <div className="flex gap-4 text-xl">
               <Link href="https://www.facebook.com/share/1MAs2ux3mt/"

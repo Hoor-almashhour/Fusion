@@ -8,7 +8,7 @@ import { IoChevronDown } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { useLocale, useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/app/component/LanguageSwitcher/LanguageSwitcher';
-
+import Image from "next/image";
 
 
 
@@ -69,11 +69,14 @@ const Navbar = () => {
           <div className="flex justify-between items-center md:h-[140px] px-5">
             {/* Logo */}
             <div className="flex-shrink-0">
-               <img
-               src="/logo/logo2.png"
-               alt="FUSION logo"
-              className="w-24 "
-            />
+               <Image
+                src="/logo/logo2.png"
+                alt="FUSION logo"
+                width={144}
+                height={144}
+                className="rounded-full object-cover"
+              />
+              
             </div>
 
             {/* Desktop Menu */}
