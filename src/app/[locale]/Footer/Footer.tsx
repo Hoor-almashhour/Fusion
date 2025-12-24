@@ -101,7 +101,9 @@ export default function Footer() {
 
               <li className="flex items-center justify-start gap-2">
                 <FaUniversity className="text-yellow-400" />
-                {t("universities")}
+                   <Link href="/universities" className="hover:underline">
+                    {t("universities")}
+                   </Link>
               </li>
 
               <li className="flex items-center gap-2">

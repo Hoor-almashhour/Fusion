@@ -26,7 +26,7 @@ const Navbar = () => {
   const links = [
     { href: "/", label: t('home') },
     { href: "/study-steps", label: t('steps')},
-    { href: "#", label: t('universities'), icon: <IoChevronDown /> },
+    { href: "/universities" , label: t('universities'), icon: <IoChevronDown /> },
     { href: "/blog",   label: t('news') },
     { href: "/about", label: t('about')},
     { href: "/contact", label: t('contact') },
