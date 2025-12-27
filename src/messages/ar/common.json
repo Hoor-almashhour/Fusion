@@ -175,6 +175,26 @@
         }
       ]
     },
+    "university": {
+      "gallery": "جولة داخل",
+      "overview": "نبذة عن الجامعة",
+      "location": "موقع الجامعة",
+      "goals": "أهداف الجامعة",
+      "faculties": "كليات الجامعة",
+      "features": "مميزات الجامعة",
+      "activities": "الأنشطة الطلابية",
+      "campus": "الحرم الجامعي",
+      "facilities": "تجهيزات الجامعة",
+      "housing": "السكن الطلابي",
+      "stats": {
+       "title": "إحصائيات حول",
+        "worldRank": "الترتيب العالمي",
+        "localRank": "الترتيب المحلي",
+        "students": "عدد الطلاب",
+        "internationalStudents": "الطلاب الدوليون"
+      }
+    },
+
     "contact": {
       "title": "تواصل معنا",
       "name": "الاسم",

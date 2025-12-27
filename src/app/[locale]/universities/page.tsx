@@ -20,7 +20,7 @@ export default function UniversitiesPage() {
           >
             <img
               src={u.logo}
-              className="w-24 mx-auto mb-4"
+              className="w-24 mx-auto h-24"
               alt={u.name[locale]}
             />
 

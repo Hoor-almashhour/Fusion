@@ -176,6 +176,26 @@
       }
     ]
   },
+  
+  "university": {
+    "gallery": "Explore",
+    "overview": "About the University",
+    "location": "University Location",
+    "goals": "University Goals",
+    "faculties": "Faculties",
+    "features": "University Features",
+    "activities": "Student Activities",
+    "campus": "Campus",
+    "facilities": "Facilities",
+    "housing": "Student Housing",
+    "stats": {
+     "title": "University Statistics",
+      "worldRank": "World Ranking",
+      "localRank": "Local Ranking",
+      "students": "Students",
+      "internationalStudents": "International Students"
+    }
+  },
 
    "contact": {
     "title": "Contact Us",
