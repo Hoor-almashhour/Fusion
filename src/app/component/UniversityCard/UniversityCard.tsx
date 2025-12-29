@@ -39,16 +39,11 @@ export default function UniversityCard ({
             <span className="text-gray-700 text-lg"><Icon /></span>
             </div>
 
-            <div className="flex flex-row justify-between w-full mt-6">
-            <Link
-                 href={`/universities/${slug}`}
-                className="bg-[#F9680E] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-l-lg hover:bg-[#f77b2b] transition"
-            >   
-              {t("details")}
-            </Link>
+            <div className="flex flex-row justify-center items-center w-full mt-6">
             <Link
                 href="https://wa.me/905318598487"
-                className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-r-lg hover:bg-[#8a0a0a] transition"
+                className="bg-[#B10B0B] text-white py-3 sm:py-4 w-full sm:w-1/2 rounded-full
+                 hover:bg-[#8a0a0a] transition"
             >
              {t("register")}
             </Link>

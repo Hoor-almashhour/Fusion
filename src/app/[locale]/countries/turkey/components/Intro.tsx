@@ -23,10 +23,8 @@ export default function Intro({ t }: TProps) {
        
          <div className="relative w-full md:w-3/5 mx-auto bg-[#B10B0B] rounded-3xl overflow-hidden flex items-center p-6 md:p-10">
           
-          {/* الخلفية */}
           <div className="absolute inset-0 opacity-30 bg-[url('/imagesflag/tr-flag.jpg')] bg-cover bg-center"></div>
-
-          {/* الصورة — ثابتة يمين */}
+       
           <div className={`relative md:w-full flex ${ isArabic ? "md:justify-start" : "md:justify-start"}`}>
             <img
               src="/imagesStats/Imgsrc.jpg"

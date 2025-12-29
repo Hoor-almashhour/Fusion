@@ -24,10 +24,10 @@
      "spain": "spain"
   },
   "hero": {
-    "title": "Get your university admission in Turkey",
+   "title": "Get accepted to the world's top universities",
     "subtitle": "Don't miss ",
     "word": "the opportunity!",
-    "description":"Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admission and visa procedures",
+    "description": "Fusion Educational Services in Turkey helps students apply to and enroll in the best Turkish and international universities, with full support in admissions, visas, accommodation, and VIP services.",
     "btn1":"Universities",
     "btn2": "Contact us"
   },
@@ -67,9 +67,8 @@
   },
   "universities": {
     "title": "Our Universities",
-    "subtitle": "Top universities in Turkey and Northern Cyprus",
+    "subtitle": "The most important universities in the world",
     "moreBtn": "Discover More Universities",
-    "details": "More...",
     "register": "Register Now"
   },
   "heroStats": {
@@ -144,7 +143,7 @@
     ]
   },
   "studyStepsSection": {
-    "title": "Steps to Apply for Studying in Türkiye",
+    "title": "Steps to apply for studies",
     "steps": [
       {
         "id": 1,

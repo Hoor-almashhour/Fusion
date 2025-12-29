@@ -33,17 +33,11 @@ export default function UniversitiesPage() {
               <span>{u.city[locale]}</span>
             </div>
 
-            <div className="flex mt-6">
-              <Link
-                href={`/${locale}/universities/${u.slug}`}
-                className="bg-[#F9680E] text-white py-3 w-1/2 rounded-l-lg hover:bg-[#f77b2b] transition"
-              >
-                {t("details")}
-              </Link>
+            <div className="flex mt-6 justify-center items-center">
 
               <Link
                 href="https://wa.me/905318598487"
-                className="bg-[#B10B0B] text-white py-3 w-1/2 rounded-r-lg hover:bg-[#8a0a0a] transition"
+                className="bg-[#B10B0B] text-white py-3 w-1/2 rounded-full hover:bg-[#8a0a0a] transition"
               >
                 {t("register")}
               </Link>

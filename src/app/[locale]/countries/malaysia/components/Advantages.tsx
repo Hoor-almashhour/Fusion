@@ -5,6 +5,7 @@ import EducationSystem from "./EducationSystem";
 import Costs from "./Costs";
 import Housing from "./Housing";
 import Requirements from "./Requirements";
+import Tips from "./Tips";
 
 type AdvantageItem = {
   title: string;
@@ -42,6 +43,7 @@ export default function Advantages({ t }: TProps) {
            <Costs t={t}     />
            <Housing t={t}    />
            <Requirements t={t}     />
+           <Tips t={t}   />
       </div>
      
     </section>
