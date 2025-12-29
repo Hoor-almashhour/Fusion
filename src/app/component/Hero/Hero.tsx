@@ -32,7 +32,7 @@ const Hero = () => {
 
           {/* Subtitle + description */}
           <p className="text-lg mb-6 text-gray-800 leading-8">
-            <span className="flex items-center gap-1  justify-center flex-row md:justify-start md:flex-row font-bold md:text-2xl text-lg 
+            <span className="flex items-center gap-1  justify-center flex-row md:justify-start md:flex-row font-bold md:text-2xl text-sm
               ">
               
               <FaInfo className="text-[#F9680E]" />
