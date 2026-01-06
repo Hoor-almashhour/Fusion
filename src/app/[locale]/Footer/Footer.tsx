@@ -26,23 +26,21 @@ export default function Footer() {
   const isArabic = locale === "ar";
 
   return (
-    <footer dir={isArabic ? "rtl" : "ltr"} className="bg-[#B10B0B] text-white">
+    <footer  className="bg-[#B10B0B] text-white flex flex-col">
     
       <div className="bg-[#F9680E] py-8 px-4 md:px-16 rounded-b-[40px]">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-6">
           <h2 className="text-lg md:text-xl font-semibold text-center md:text-right">
             {t("helpTitle")}
           </h2>
 
           <div className="flex flex-col sm:flex-row-reverse items-center gap-3 w-full md:w-auto">
             <input
-             dir={isArabic ? "rtl" : "ltr"}
-              type="text"
+              name="text"
               placeholder={t("phonePlaceholder")}
-              className={`
-              px-4 py-2 rounded-full text-gray-800 text-end focus:outline-none w-full sm:w-72 bg-white 
-               ${isArabic ? "text-left": "text-right"
-              }`}
+              className="
+              px-4 py-2 rounded-full text-gray-800 text-end focus:outline-none w-full sm:w-72 bg-white "
+             
             />
             <button className="bg-[#B10B0B] hover:bg-[#B10B0B] transition text-white font-semibold px-8 py-2 rounded-full">
               {t("send")}
@@ -53,19 +51,19 @@ export default function Footer() {
 
     
       <div  className="py-12 px-4 md:px-16">
-        <div  className="max-w-6xl mx-auto flex flex-1 gap-8 flex-col-reverse justify-center items-center md:flex-row-reverse md:justify-between md:gap-8 text-center md:text-left">
+        <div  className="max-w-6xl mx-auto flex flex-1 gap-8 flex-col-reverse justify-center items-center md:flex-row md:justify-between md:gap-8 text-center md:text-right">
           
          
-          <div >
+          <div>
             <h3 className="text-lg font-semibold mb-4">{t("contactTitle")}</h3>
             <ul  className="space-y-3 text-sm">
-              <li  className="flex items-center justify-start gap-2">
-                 <FaClock  className="text-yellow-400" />
+              <li  className="flex items-center justify-start flex-row-reverse  gap-2">
+                 <FaClock  className="text-yellow-400 " />
                 {t("workHours")}
                
               </li>
 
-              <li className="flex items-center justify-start gap-2">
+              <li className="flex items-center justify-start  flex-row-reverse  gap-2">
                  <FaPhoneAlt className="text-yellow-400" />
                 <Link href="https://wa.me/905318598487" className="font-semibold">
                   00905318598487
@@ -73,40 +71,41 @@ export default function Footer() {
                
               </li>
 
-              <li className="flex items-center justify-start gap-2">
+              <li className="flex items-center justify-start  flex-row-reverse  gap-2">
                  <FaEnvelope className="text-yellow-400" />
                 <Link href="mailto:info@fusion-turk.com" className="font-semibold">
                   info@fusion-turk.com
                 </Link>
               </li>
 
-              <li className="flex items-center justify-start gap-2">
+              <li className="flex items-center justify-start  flex-row-reverse  gap-2">
                  <FaEnvelope className="text-yellow-400" />
-                {t("address")}
+                 <Link href="https://maps.app.goo.gl/vEH1XBTcdGxcEGez6">
+                  {t("address")}
+                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* روابط سريعة */}
           <div>
             <h3 className="text-lg font-semibold mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-3 text-sm">
 
-              <li className="flex items-center gap-2">
+              <li className="flex flex-row-reverse items-center justify-start gap-2 ">
               <FaHome className="text-yellow-400" />
               <Link href="/" className="hover:underline">
                 {t("home")}
               </Link>
             </li>
 
-              <li className="flex items-center justify-start gap-2">
+              <li className="flex flex-row-reverse items-center  justify-start gap-2 ">
                 <FaUniversity className="text-yellow-400" />
                    <Link href="/universities" className="hover:underline">
                     {t("universities")}
                    </Link>
               </li>
 
-              <li className="flex items-center gap-2">
+              <li className="flex flex-row-reverse items-center  justify-start gap-2 ">
                 <FaUser className="text-yellow-400" />
                 <Link href="/about" className="hover:underline">
                   {t("about")}
@@ -114,14 +113,14 @@ export default function Footer() {
               </li>
 
 
-              <li className="flex items-center gap-2">
+              <li className="flex flex-row-reverse items-center  justify-start gap-2 ">
                 <FaPen className="text-yellow-400" />
                 <Link href="/blog" className="hover:underline">
                   {t("blog")}
                 </Link>
              </li>
 
-              <li className="flex items-center gap-2">
+              <li className="flex flex-row-reverse items-center  justify-start gap-2 ">
                 <FaRegClipboard className="text-yellow-400" />
                 <Link href="/contact" className="hover:underline">
                   {t("register")}

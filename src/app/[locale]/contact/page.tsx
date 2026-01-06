@@ -53,7 +53,7 @@ const ContactPage = () => {
         {/* الخريطة + معلومات الاتصال */}
         <div className="md:w-1/2 space-y-6">
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6019.426330797471!2d28.985738506420912!3d41.031530900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9638e31e1f1%3A0x28cf5b419bae1671!2sHector%20Kurumsal!5e0!3m2!1sar!2str!4v1767723245941!5m2!1sar!2str"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.715643090291!2d28.9762883!3d41.0314767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9dffd2fffff%3A0x11d252b3a19a7391!2zxLBzdGFuYnVsIEJleW_En2x1IMSwxZ8gTWVya2V6aQ!5e0!3m2!1sar!2str!4v1767728971730!5m2!1sar!2str"
                width="575" height="450" 
                 className='p-2 max-w-full'
                 loading="lazy"
