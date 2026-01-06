@@ -2,7 +2,6 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import React, { useState } from 'react';
-import PhoneInput from 'react-phone-number-input/input';
  import { E164Number } from "libphonenumber-js/core";
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import Link from 'next/link';
@@ -54,13 +53,14 @@ const ContactPage = () => {
         {/* الخريطة + معلومات الاتصال */}
         <div className="md:w-1/2 space-y-6">
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6022.9325074818835!2d28.84075!3d40.993167!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v1764189854238!5m2!1sen!2str"
-             width="575" height="450" 
-             className='p-2 max-w-full'
-              loading="lazy"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6019.426330797471!2d28.985738506420912!3d41.031530900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9638e31e1f1%3A0x28cf5b419bae1671!2sHector%20Kurumsal!5e0!3m2!1sar!2str!4v1767723245941!5m2!1sar!2str"
+               width="575" height="450" 
+                className='p-2 max-w-full'
+                loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade"
                >
 
-             </iframe>
+            </iframe>
 
           <div className="text-lg space-y-2">
             <p>📍 Istanbul, Turkey</p>
