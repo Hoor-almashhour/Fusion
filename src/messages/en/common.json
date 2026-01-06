@@ -32,16 +32,45 @@
     "btn2": "Contact us"
   },
   "search": {
-    "title": "Find Specitaly",
-    "subtitle": ".Use our advanced search engine to find the right match for you",
+    "title": "Find Your Specialty",
+    "subtitle": "Send your request through our form",
     "degree": "Degree",
     "language": "Language",
-    "major": "Specitaly",
-    "universities": "Universities",
-    "placeholder": "Search for...",
-    "btnSearch": "Search",
-    "btnAdvanced": "Advanced"
+    "major": "Specialty",
+    "country": "Country",
+    "placeholder": "Additional notes",
+    "phone": "Student Phone Number",
+    "send": "Send",
+
+    "bachelor": "Bachelor",
+    "master": "Master",
+    "phd": "PhD",
+
+    "turkish": "Turkish",
+    "english": "English",
+    "russian": "Russian",
+
+    "medical": "Medical",
+    "engineering": "Engineering",
+    "literary": "Literary",
+    "humanities": "Humanities",
+
+    "turkey": "Turkey",
+    "russia": "Russia",
+    "cyprus": "Cyprus",
+    "belarus": "Belarus",
+    "georgia": "Georgia",
+    "italy": "Italy",
+    "spain": "Spain",
+    "azerbaijan": "Azerbaijan",
+    "egypt": "Egypt",
+    "jordan": "Jordan",
+    "iraq": "Iraq",
+    "malaysia": "Malaysia",
+    "china": "China",
+    "uk": "United Kingdom"
   },
+
   
   "whyChoose": {
     "title": "Why Choose Fusion for University Admission in Turkey?",

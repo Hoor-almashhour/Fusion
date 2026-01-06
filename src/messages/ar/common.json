@@ -31,16 +31,45 @@
       "btn2": "تواصل معنا"
     },
     "search": {
-      "title": "ابحث عن تخصص",
-      "subtitle": "استخدم محرك البحث المتقدم لدينا لإيجاد المناسب لك.",
-      "degree": "الدرجة",
-      "language": "اللغة",
-      "major": "التخصص",
-      "universities": "الجامعات",
-      "placeholder": "بحث عن...",
-      "btnSearch": "بحث",
-      "btnAdvanced": "متقدم"
-    },
+    "title": "ابحث عن تخصص",
+    "subtitle": "استخدم محرك البحث لإرسال طلبك",
+    "degree": "الدرجة",
+    "language": "اللغة",
+    "major": "التخصص",
+    "country": "الدولة",
+    "placeholder": "ملاحظات إضافية",
+    "phone": "رقم الطالب",
+    "send": "إرسال",
+
+    "bachelor": "بكالوريوس",
+    "master": "ماجستير",
+    "phd": "دكتوراه",
+
+    "turkish": "التركية",
+    "english": "الإنجليزية",
+    "russian": "الروسية",
+
+    "medical": "طبي",
+    "engineering": "هندسي",
+    "literary": "أدبي",
+    "humanities": "إنساني",
+
+    "turkey": "تركيا",
+    "russia": "روسيا",
+    "cyprus": "قبرص",
+    "belarus": "بيلاروسيا",
+    "georgia": "جورجيا",
+    "italy": "إيطاليا",
+    "spain": "إسبانيا",
+    "azerbaijan": "أذربيجان",
+    "egypt": "مصر",
+    "jordan": "الأردن",
+    "iraq": "العراق",
+    "malaysia": "ماليزيا",
+    "china": "الصين",
+    "uk": "بريطانيا"
+  },
+
     
     "whyChoose": {
       "title": "لماذا تختار فيوجن للتقديم بالجامعات التركية؟",
