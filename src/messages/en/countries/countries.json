@@ -1,0 +1,120 @@
+{
+
+    "heroTitle": "Fusion International Educational Services",
+
+    "intro": {
+    "p1": "Fusion is an international educational services and consulting company, specializing in empowering students to confidently and clearly gain access to accredited and globally recognized universities.",
+
+    "p2": "We accompany students from the initial dream stage through acceptance and academic stability, via meticulous consultations and formal partnerships with universities."
+
+    },
+
+    "whyFusion": {
+    "title": "What distinguishes Fusion?",
+
+    "list": [
+        "Official agents for more than 63 accredited universities worldwide",
+
+        "Public and private universities recognized internationally",
+
+        "Precise academic consultations to choose the most suitable major and university",
+
+        "Guaranteed university admission according to requirements",
+
+        "Comprehensive follow-up before and after admission",
+
+        "VIP services for students and parents",
+
+        "Experience in several international educational destinations",
+
+        "Reducing costs as much as possible without compromising quality"
+    ]
+
+    },
+
+    "services": {
+
+    "title": "Our educational services",
+
+    "intro": "At Fusion, we offer a comprehensive suite of educational services that include:",
+
+    "list": [
+        "University admissions (Bachelor's - Master's - PhD)",
+
+        "Public and private universities",
+
+        "Scholarships, discounts, and prepayment programs",
+
+        "Complete admission file preparation",
+
+        "Post-admission follow-up (accommodation - visa - settling in)",
+
+        "Remote academic consultations for students and parents,",
+
+        "Services tailored for international students"
+
+    ]
+
+    },
+
+    "countries": {
+
+    "title": "Countries we operate in",
+
+    "list": [
+        "Turkey",
+
+        "Russia",
+
+        "Cyprus",
+
+        "Egypt",
+
+        "Malaysia",
+
+        "Spain",
+
+        "UK",
+
+        "Germany",
+
+        "Italy",
+
+        "Jordan",
+
+        "Belarus",
+
+        "Azerbaijan"
+
+    ],
+
+    "note": "And other internationally accredited educational destinations."
+
+    },
+
+    "trust": {
+    "title": "Why do students and parents trust us?",
+
+    "list": [
+        "We don't gamble with the student's future",
+
+        "We don't direct students to unaccredited universities",
+
+        "We don't abandon students after acceptance",
+
+        "We operate with clear contracts and formal partnerships",
+
+        "We always put the student's best interests first"
+
+    ]
+
+    },
+
+    "cta": {
+        "title": "Fusion for Educational Services",
+
+        "text": "We open the doors to more than 63 universities worldwide, accompanying you from dream to acceptance with confidence and security."
+
+    }
+    
+}

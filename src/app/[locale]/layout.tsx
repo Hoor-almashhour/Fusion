@@ -24,19 +24,11 @@ export const  viewport = {
 async function getMessages(locale: string) {
   try {
     const common = (await import(`@/messages/${locale}/common.json`)).default;
-    const turkey = (await import(`@/messages/${locale}/countries/turkey.json`)).default;
-    const malaysia = (await import(`@/messages/${locale}/countries/malaysia.json`)).default;
-   const germany = (await import(`@/messages/${locale}/countries/germany.json`)).default;
-   const spain= (await import(`@/messages/${locale}/countries/spain.json`)).default;
+    const countries  = (await import(`@/messages/${locale}/countries/countries.json`)).default;
      
    return {
         ...common,
-      countries: {
-        turkey,
-        malaysia,
-        germany,
-        spain
-      }
+        countries
     };
   } catch (error) {
     console.error("Translation load error:", error);
@@ -50,7 +42,7 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string; country?: string }>; 
+  params: Promise<{ locale: string}>; 
 }) {
   const { locale } = await params;
   

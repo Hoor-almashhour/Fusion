@@ -20,6 +20,32 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-4">{t("section3Title")}</h2>
         <p>{t("section3Text")}</p>
       </section>
+
+      <section className="mb-16 text-xl">
+        <h2 className="text-3xl font-semibold mb-4">
+          {t("section4Title")}
+        </h2>
+
+        <div className="space-y-3">
+          {t.raw("section4Text").map((item: string, index: number) => (
+            <p key={index}>{item}</p>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16 text-xl">
+        <h2 className="text-3xl font-semibold mb-4">
+          {t("section5Title")}
+        </h2>
+
+        <div className="space-y-3">
+          {t.raw("section5Text").map((item: string, index: number) => (
+            <p key={index}>{item}</p>
+          ))}
+        </div>
+      </section>
+
+
     </div>
   );
 }

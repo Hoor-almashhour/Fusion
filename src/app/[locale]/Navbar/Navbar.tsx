@@ -17,9 +17,7 @@ const Navbar = () => {
 
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
   const t = useTranslations('navbar');
-  const countries = t.raw('countriesList') as Record<string, string>;
   const locale = useLocale();
   const isArabic = locale === "ar";
  
@@ -92,29 +90,18 @@ const Navbar = () => {
                   </li>
                ))}
 
+                <li>
+                <Link
+                  href="/countries"
+                  className={`flex items-center px-3 py-6 hover:text-[#F9680E] ${
+                    pathname === "/countries" ? "text-[#F9680E]" : ""
+                  }`}
+                >
+                  {t('country')}
+                </Link>
+              </li>
+
                 
-                <li className="relative group">
-                  <button className="flex items-center gap-1 px-3 py-6 hover:text-orange-500">
-                       {t('country')}<IoChevronDown />
-                  </button>
-                   <ul className="absolute right-0 top-full mt-1 w-44 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                      {Object.entries(countries).map(([key, label]) => (
-                      <li key={key}>
-                        <Link
-                          href={`/countries/${key}`}
-                          className={`block px-4 py-2 rounded-md transition-all duration-200
-                            ${
-                              pathname === `/countries/${key}`
-                                ? "text-[#F9680E] font-semibold"
-                                : "text-gray-700 hover:bg-gray-100 hover:text-[#F9680E]"
-                            }`}
-                        >
-                            {label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
                 {links.slice(2).map((link) => (
                   <li key={link.label}>
                     <Link
@@ -169,38 +156,16 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-
-             
-              <li className="mt-2 w-full text-center  flex flex-col items-center">
-                <button
-                  onClick={() => setMobileCountriesOpen(!mobileCountriesOpen)}
-                  className="font-bold text-white flex justify-center items-center gap-2"
+              <li>
+                <Link
+                  href="/countries"
+                  onClick={() => setMenuOpen(false)}
+                  className="px-4 py-4 flex justify-center items-center w-full text-center"
                 >
-                     {t('country')}
-                  <IoChevronDown 
-                    className={`text-white transition-transform duration-300 ${
-                      mobileCountriesOpen ? "rotate-180" : ""
-                    }`} 
-                  />
-                </button>
-
-                {mobileCountriesOpen && (
-                  <ul className="mt-2 text-gray-200 space-y-1">
-                        {Object.entries(countries).map(([key, label]) => (
-                          <li key={key}>
-                            <Link
-                              href={`/countries/${key}`}
-                              onClick={() => setMenuOpen(false)}
-                              className="block py-1"
-                            >
-                              {label}
-                            </Link>
-                          </li>
-                       ))}
-                  </ul>
-                )}
+                  {t('country')}
+                </Link>
               </li>
-             
+
               {links.slice(2).map((link) => (
                 <li key={link.label}>
                   <Link

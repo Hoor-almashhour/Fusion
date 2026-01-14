@@ -3,12 +3,6 @@
     "home": "Home",
     "steps": "Steps to Start",
     "country": "Countries",
-       "countriesList": {
-        "turkey": "Turkey",
-        "malaysia": "Malaysia",
-        "germany": "Germany",
-        "spain": "spain"
-      },
     "universities": "Universities",
     "news": "News & Articles",
     "about": "Who We Are",
@@ -237,26 +231,57 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "section1Title": "Who We Are",
-    "section1Text": "Fusion Education was founded in 2018 and quickly became a major player in education consulting and study abroad. We have developed strong partnerships with over 100 prestigious universities in Turkey, Malaysia, Spain, and Germany, greatly increasing our ability to meet the diverse educational aspirations of students from the Middle East and North Africa region.",
-    
-    "section2Title": "Our Vision",
-    "section2Text": "Our vision is to empower students to study at Turkish universities that represent an essential step in building their future. We strive to offer a supportive academic environment while maintaining high service quality.",
-    
-    "section3Title": "Our Mission",
-    "section3Text": "Our mission is to help international students reach Turkish universities, provide the best academic discounts, assist them in choosing the right major, and offer full support through a professional and experienced team."
-  },
-  
+    "title": "Who We Are",
+
+    "section1Title": "Who We Are:",
+    "section1Text": "Fusion is a specialized consulting services company, specializing in helping students confidently and strategically gain access to internationally accredited and recognized universities. We act as a trusted link between students and leading public universities. Our services begin with academic consultation regarding the chosen specialization and university, and extend beyond acceptance, impacting students even after they have completed their studies. At Fusion, we don't just sell educational slogans; we build a comprehensive educational pathway. We consider the student's individual needs, aspirations, and circumstances.",
+
+    "section2Title": "Our Vision:",
+    "section2Text": "To be the first and trusted choice for students and parents in the field of international educational services, and to make a real difference in the future of generations through accredited, safe, and consciously guided education.",
+
+    "section3Title": "Our Mission:",
+    "section3Text": "To provide comprehensive educational services And integrated, relying on meticulous academic advising, formal partnerships with academics, and student follow-up, including their educational experience from maturity to creative acceptance.",
+
+    "section4Title": "Our Goals:",
+
+    "section4Text": [
+
+      "To empower students to access internationally accredited and recognized universities.",
+
+      "To streamline the admissions process and study abroad, reducing complexity and risks.",
+
+      "To provide realistic academic advising tailored to the student's abilities and budget.",
+
+      "To build a generation that is academically and professionally qualified and capable of competing globally.",
+
+      "To enhance parental trust through transparency and comprehensive follow-up."
+
+      ],
+
+      "section5Title": "Our Values:",
+
+      "section5Text": [
+        
+      "Credibility: We only promise what we can deliver.",
+
+      "Transparency: Complete clarity regarding admissions, costs, and procedures.",
+
+      "Professionalism: A dedicated team with genuine experience in the educational field.",
+
+      "Commitment: Students are not files, but responsibilities.",
+
+      "Focus on the Future: We guide students toward long-term, not short-term, opportunities."
+
+      ]
+    },
+
   "blog": {
     "title": "Blog & Articles",
     "subtitle": "Latest articles about studying abroad and educational tips",
     "readMore": "Read more",
      "prev": "Previous",
     "next": "Next"
-    
   },
-
 
   "footer": {
     "helpTitle": "We will help you choose the right educational path",
