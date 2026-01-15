@@ -1,5 +1,7 @@
 "use client";
 
+import { E164Number } from "libphonenumber-js/core";
+import PhoneInputField from "@/app/[locale]/contact/PhoneInputField";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { LiaGraduationCapSolid } from "react-icons/lia";
@@ -9,14 +11,21 @@ export default function SearchSection() {
   const locale = useLocale();
   const isArabic = locale === "ar";
 
-  const [formData, setFormData] = useState({
-    degree: "",
-    language: "",
-    major: "",
-    country: "",
-    search: "",
-    phone: "",
-  });
+ const [formData, setFormData] = useState<{
+  degree: string;
+  language: string;
+  major: string;
+  country: string;
+  search: string;
+  phone?: E164Number;
+}>({
+  degree: "",
+  language: "",
+  major: "",
+  country: "",
+  search: "",
+  phone: undefined,
+});
 
 
   const handleChange = (
@@ -26,9 +35,20 @@ export default function SearchSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+const handlePhoneChange = (value?: E164Number) => {
+  setFormData((prev) => ({
+    ...prev,
+    phone: value,
+  }));
+};
 
  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+
+ if (!formData.phone) {
+    alert(locale === "ar" ? "الرجاء إدخال رقم الهاتف" : "Please enter phone number");
+    return;
+  }
 
   const res = await fetch("/api/send-email", {
     method: "POST",
@@ -104,18 +124,19 @@ export default function SearchSection() {
           </select>
         </div>
 
+        <PhoneInputField 
+            value={formData.phone || undefined}
+            onChange={handlePhoneChange}
+            placeholder={t("phone")}
+            required
+          />
         <input
           name="search"
           placeholder={t("placeholder")}
           onChange={handleChange}
           className="w-full border p-2 mb-4"
         />
-        <input
-          name="phone"
-          placeholder={t("phone")}
-          onChange={handleChange}
-          className="w-full border p-2 mb-4"
-        />
+       
         <div className="flex justify-center items-center">
           <button
                 type="submit"

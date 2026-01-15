@@ -117,7 +117,6 @@ const Navbar = () => {
               </ul>
 
 
-            {/* زر التسجيل */}
             <div className="hidden md:flex items-center  gap-4  ">
               <Link href="https://wa.me/905318598487"className="text-white px-9 py-2 bg-[#F9680E] rounded-full font-semibold hover:bg-[#B10B0B]">
                 {t('register')}

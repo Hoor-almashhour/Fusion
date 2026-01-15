@@ -6,11 +6,19 @@ import { E164Number } from "libphonenumber-js/core";
 import { useLocale, useTranslations } from "next-intl";
 
 interface Props {
-  value: E164Number | undefined;
-  onChange: (value: E164Number | undefined) => void;
+   value?: E164Number;
+  onChange: (value?: E164Number) => void;
+  placeholder?: string;
+  required?: boolean;
 }
 
-export default function PhoneInputField({ value, onChange }: Props) {
+export default function PhoneInputField({
+  value,
+  onChange,
+  placeholder,
+  required
+}: Props) {
+  
   const locale = useLocale(); 
   const isArabic = locale === "ar";
 
@@ -20,6 +28,7 @@ export default function PhoneInputField({ value, onChange }: Props) {
 
 
   return (
+      <div className="w-full mb-4">
     <PhoneInput
       placeholder={t("placeholder.phone")}
       defaultCountry="TR"
@@ -28,6 +37,12 @@ export default function PhoneInputField({ value, onChange }: Props) {
       className={`w-full border rounded p-2 mb-4 ${isArabic ? "text-right" : "text-left"}`}
       style={{ direction: isArabic ? "rtl" : "ltr" }}
     />
-    
+    {/* ✅ required validation */}
+      {required && !value && (
+        <p className="text-red-600 text-sm mt-1">
+          {isArabic ? "رقم الهاتف مطلوب" : "Phone number is required"}
+        </p>
+      )}
+      </div>
   );
 }

@@ -13,18 +13,16 @@ export default function CountryPage() {
   return (
     <div className="mb-4" >
 
-      <section dir={locale === "ar" ? "rtl" : "ltr"} className="flex flex-col md:flex-row-reverse items-center justify-between min-h-[100vh] 
-            px-3 md:px-[130px] py-28 mb-4 bg-gray-50 text-primary font-sans">
+      <section dir={locale === "ar" ? "rtl" : "ltr"} className="flex flex-col md:flex-row-reverse items-center justify-between min-h-[100vh]  px-3 md:px-[130px] py-28 mb-4 bg-gray-50 text-primary font-sans">
   
           <div className="md:w-1/2 flex justify-center my-5 ">
-              <img
-                src="/Hero/heroImg.png"
-                alt="Student"
-              className='w-lg h-4/5 '
-              />
+                <img
+                  src="/Hero/heroImg.png"
+                  alt="Student"
+                  className='w-lg h-4/5 '
+                />
           </div>
-      
-          <div
+           <div
                   className={`w-full text-center text-white ${
                       isArabic ? "md:text-right" : "md:text-left"
                   }`}
@@ -44,8 +42,7 @@ export default function CountryPage() {
               </div>
           </div>
         </section>
-        <section dir={locale === "ar" ? "rtl" : "ltr"} className="bg-white md:mx-auto  border-t-2 border-[#F9680E] shadow-2xl rounded-lg py-16 
-                px-6 md:px-5 md:max-w-7xl mx-4 ">
+        <section dir={locale === "ar" ? "rtl" : "ltr"} className="bg-white md:mx-auto  border-t-2 border-[#F9680E] shadow-2xl rounded-lg py-16 px-6 md:px-5 md:max-w-7xl mx-4 ">
 
             <div className="max-w-7xl mx-auto">
               <p className="mb-4">{t("intro.p1")}</p>
@@ -94,10 +91,7 @@ export default function CountryPage() {
                 <p>{t("cta.text")}</p>
               </section>
             </div>
-        
         </section>
-     
-
     </div>
   );
 }
