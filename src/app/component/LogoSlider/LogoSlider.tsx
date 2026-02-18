@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { universitiesList } from "@/app/data/universities/universities-list";
+import { universitiesList } from "@/app/data/universities";
+
 
 type Props = {
   lang: "ar" | "en";
@@ -19,7 +20,7 @@ export default function LogoSlider({ lang }: Props) {
         transition={{
           repeat: Infinity,
           ease: "linear",
-          duration: 25,
+          duration: 35,
         }}
       >
         {logos.map((u, idx) => (

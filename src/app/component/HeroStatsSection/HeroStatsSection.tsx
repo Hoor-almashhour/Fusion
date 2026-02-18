@@ -1,10 +1,10 @@
 'use client';
-import Image from "next/image";
+
 import React from "react";
 import { LiaGraduationCapSolid } from "react-icons/lia";
 import { useLocale, useTranslations } from "next-intl";
 
-const imageSrc = "/imagesStats/Imgsrc.jpg";
+const imageSrc = "/imagesStats/Imgsrc1.jpg";
 
 interface StatItem {
   number: string;
@@ -71,7 +71,7 @@ export default function HeroStatsSection() {
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
             <div className="hidden md:block absolute -right-10 top-8 w-64 h-64 bg-orange-100 rounded-full transform rotate-12" aria-hidden />
             <div className="relative z-10 w-[320px] sm:w-[420px] md:w-[520px] lg:w-[560px] shadow-lg rounded-lg overflow-hidden">
-              <img
+              <img 
                 src={imageSrc}
                 alt={t("imageAlt")}
                 className="object-cover w-auto h-64 md:h-[360px] lg:h-[420px]"

@@ -11,7 +11,6 @@ import { useLocale} from "next-intl";
 type Props = University;
 
 export default function UniversityCard ({
- slug,
   name,
   city,
   logo,
@@ -27,7 +26,7 @@ export default function UniversityCard ({
             <img
                 src={logo}
                 alt={name[locale]}
-                className="object-contain mb-4 w-24 h-24"
+                className="object-contain mb-4 w-26 h-24"
             />
             <h3 className="text-xl font-bold text-[#F9680E] mb-2">
                  {name[locale]}

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { universitiesList } from "@/app/data/universities/universities-list";
+
 import { useTranslations, useLocale } from "next-intl";
+import { universitiesList } from "@/app/data/universities";
 
 export default function UniversitiesPage() {
   const t = useTranslations("universities");

@@ -10,7 +10,12 @@
       "register": "سجل الآن",
       "partner": "كن شريكنا لنا"
     },
-    
+    "countries": {
+      "turkey": "تركيا",
+      "malaysia": "ماليزيا",
+      "germany":" ألمانيا",
+      "spain" : "اسبانيا"
+    },
     "hero": {
       "title": "احصل على قبولك الجامعي في أهم الجامعات العالمية ",
       "subtitle": "لا تخلي الفرصة",
@@ -166,28 +171,28 @@
           "id": 1,
           "title": "التواصل مع المستشار التعليمي",
           "description": "والتعرّف على جميع المعلومات اللازمة للتقديم.",
-          "image": "/Steps/step1.png",
+          "image": "/Steps/step1.jpg",
           "color": "#F9680E"
         },
         {
           "id": 2,
           "title": "إعداد الوثائق للتقديم",
           "description": "إعداد المستندات المطلوبة للدراسة في إحدى الجامعات الحكومية أو الخاصة.",
-          "image": "/Steps/step2.png",
+          "image": "/Steps/step2.jpg",
           "color": "#8a0a0a"
         },
         {
           "id": 3,
           "title": "دراسة الملف والقبول المبدئي",
           "description": "بعد دراسة الملف، الخطوة التالية هي حصولك على القبول المبدئي.",
-          "image": "/Steps/step3.png",
+          "image": "/Steps/step3.jpg",
           "color": "#F9680E"
         },
         {
           "id": 4,
           "title": "إتمام الإجراءات والحصول على القبول النهائي",
           "description": "ومن ثم سنقوم باستكمال الإجراءات كي تحصل على القبول النهائي.",
-          "image": "/Steps/step4.png",
+          "image": "/Steps/step4.jpg",
           "color": "#8a0a0a"
         }
       ]

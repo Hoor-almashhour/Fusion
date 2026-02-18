@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -27,7 +26,7 @@ export default function StudyStepsInTurkey() {
       dir={isArabic ? "rtl" : "ltr"}
       className="relative w-full bg-gradient-to-b from-white to-gray-50 overflow-hidden"
     >
-      {/* الخلفية */}
+      
       <div className="hidden  md:block md:absolute md:bottom-56 md:right-17 w-full h-full">
         <img
           src="/StudySteps/bg.png"
@@ -64,7 +63,7 @@ export default function StudyStepsInTurkey() {
                 />
               </div>
 
-              {/* الكرت */}
+              
               <div
                 className={`flex flex-col justify-between w-full shadow-lg ${s.color} p-5 pt-8 min-h-[280px]`}
               >

@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 import UniversityCard from "../UniversityCard/UniversityCard";
-import { universitiesList } from "@/app/data/universities/universities-list";
+import { universitiesList } from "@/app/data/universities";
+
 
 export default function UniversitiesSlider() {
   const t = useTranslations("universities");

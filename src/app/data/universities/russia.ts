@@ -1,0 +1,366 @@
+import { CiLocationOn } from "react-icons/ci";
+import { University } from "./types";
+
+export const russianUniversities: University[] = [
+  // russia
+  {
+    slug: "moscow-state-university",
+    name: { ar: "جامعة موسكو الحكومية", en: "Moscow State University" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "rudn-university",
+    name: { ar: "جامعة الصداقة بين الشعوب", en: "Peoples’ Friendship University of Russia" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "higher-school-of-economics",
+    name: { ar: "المدرسة العليا للاقتصاد", en: "Higher School of Economics" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "mipt",
+    name: { ar: "معهد موسكو للفيزياء والتكنولوجيا", en: "Moscow Institute of Physics and Technology" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "bauman-university",
+    name: { ar: "جامعة بومان التقنية", en: "Bauman Moscow State Technical University" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "mephi-university",
+    name: { ar: "جامعة الأبحاث النووية", en: "National Research Nuclear University MEPhI" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "sechenov-university",
+    name: { ar: "جامعة سيتشينوف الطبية", en: "Sechenov First Moscow State Medical University" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "moscow-linguistic-university",
+    name: { ar: "جامعة موسكو اللغوية", en: "Moscow State Linguistic University" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "moscow-power-engineering",
+    name: { ar: "معهد موسكو للطاقة", en: "Moscow Power Engineering Institute" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "rsuh",
+    name: { ar: "الجامعة الروسية للعلوم الإنسانية", en: "Russian State University for the Humanities" },
+    city: { ar: "موسكو", en: "Moscow" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+
+  //  سانت بطرسبرغ
+  {
+    slug: "saint-petersburg-state-university",
+    name: { ar: "جامعة سانت بطرسبرغ الحكومية", en: "Saint Petersburg State University" },
+    city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "spb-polytechnic",
+    name: { ar: "جامعة سانت بطرسبرغ البوليتكنيك", en: "Peter the Great St. Petersburg Polytechnic University" },
+    city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "pavlov-medical-university",
+    name: { ar: "جامعة بافلوف الطبية", en: "Pavlov First Saint Petersburg State Medical University" },
+    city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "itmo-university",
+    name: { ar: "جامعة ITMO", en: "ITMO University" },
+    city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "spb-economics-university",
+    name: { ar: "جامعة اقتصاد سانت بطرسبرغ", en: "Saint Petersburg State University of Economics" },
+    city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+
+  // 🟥 جامعات فيدرالية
+  {
+    slug: "kazan-federal-university",
+    name: { ar: "جامعة قازان الفيدرالية", en: "Kazan Federal University" },
+    city: { ar: "قازان", en: "Kazan" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "ural-federal-university",
+    name: { ar: "جامعة الأورال الفيدرالية", en: "Ural Federal University" },
+    city: { ar: "يكاترينبورغ", en: "Yekaterinburg" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "siberian-federal-university",
+    name: { ar: "جامعة سيبيريا الفيدرالية", en: "Siberian Federal University" },
+    city: { ar: "كراسنويارسك", en: "Krasnoyarsk" },
+    logo:"/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "far-eastern-federal-university",
+    name: { ar: "جامعة الشرق الأقصى الفيدرالية", en: "Far Eastern Federal University" },
+    city: { ar: "فلاديفوستوك", en: "Vladivostok" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "north-eastern-federal-university",
+    name: { ar: "جامعة شمال شرق روسيا الفيدرالية", en: "North-Eastern Federal University" },
+    city: { ar: "ياكوتسك", en: "Yakutsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "southern-federal-university",
+    name: { ar: "جامعة الجنوب الفيدرالية", en: "Southern Federal University" },
+    city: { ar: "روستوف", en: "Rostov-on-Don" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+
+  // 🟥 سيبيريا
+  {
+    slug: "novosibirsk-state-university",
+    name: { ar: "جامعة نوفوسيبيرسك", en: "Novosibirsk State University" },
+    city: { ar: "نوفوسيبيرسك", en: "Novosibirsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "tomsk-state-university",
+    name: { ar: "جامعة تومسك", en: "Tomsk State University" },
+    city: { ar: "تومسك", en: "Tomsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "tomsk-polytechnic-university",
+    name: { ar: "جامعة تومسك البوليتكنيك", en: "Tomsk Polytechnic University" },
+    city: { ar: "تومسك", en: "Tomsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "kemerovo-state-university",
+    name: { ar: "جامعة كيميروفو", en: "Kemerovo State University" },
+    city: { ar: "كيميروفو", en: "Kemerovo" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "irkutsk-state-university",
+    name: { ar: "جامعة إيركوتسك", en: "Irkutsk State University" },
+    city: { ar: "إيركوتسك", en: "Irkutsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+
+  //  الفولغا
+  {
+    slug: "mordovia-state-university",
+    name: { ar: "جامعة موردوفيا الحكومية", en: "Ogarev Mordovia State University" },
+    city: { ar: "سارانسك", en: "Saransk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "nizhny-novgorod-state-university",
+    name: { ar: "جامعة نيجني نوفغورود", en: "Nizhny Novgorod State University" },
+    city: { ar: "نيجني نوفغورود", en: "Nizhny Novgorod" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "penza-state-university",
+    name: { ar: "جامعة بينزا", en: "Penza State University" },
+    city: { ar: "بينزا", en: "Penza" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "ulyanovsk-state-university",
+    name: { ar: "جامعة أوليانوفسك", en: "Ulyanovsk State University" },
+    city: { ar: "أوليانوفسك", en: "Ulyanovsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "chuvash-state-university",
+    name: { ar: "جامعة تشوفاش", en: "Chuvash State University" },
+    city: { ar: "تشيبوكساري", en: "Cheboksary" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "samara-state-university",
+    name: { ar: "جامعة سامارا", en: "Samara State University" },
+    city: { ar: "سامارا", en: "Samara" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+  {
+    slug: "saratov-state-university",
+    name: { ar: "جامعة ساراتوف", en: "Saratov State University" },
+    city: { ar: "ساراتوف", en: "Saratov" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+  },
+
+  //  الجنوب والشرق الأقصى + الطبية + التقنية
+    {
+        slug: "kazan-medical-university",
+        name: { ar: "جامعة قازان الطبية", en: "Kazan State Medical University" },
+        city: { ar: "قازان", en: "Kazan" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "perm-medical-university",
+        name: { ar: "جامعة بيرم الطبية", en: "Perm State Medical University" },
+        city: { ar: "بيرم", en: "Perm" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "ryazan-medical-university",
+        name: { ar: "جامعة ريازان الطبية", en: "Ryazan State Medical University" },
+        city: { ar: "ريازان", en: "Ryazan" },
+        logo:"/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "yaroslavl-medical-university",
+        name: { ar: "جامعة ياروسلافل الطبية", en: "Yaroslavl State Medical University" },
+        city: { ar: "ياروسلافل", en: "Yaroslavl" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "kuban-state-university",
+        name: {
+            ar: "جامعة كوبان الحكومية",
+            en: "Kuban State University",
+        },
+        city: { ar: "كراسنودار", en: "Krasnodar" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "volgograd-state-university",
+        name: {
+            ar: "جامعة فولغوغراد الحكومية",
+            en: "Volgograd State University",
+        },
+        city: { ar: "فولغوغراد", en: "Volgograd" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "astrakhan-state-university",
+        name: {
+            ar: "جامعة أستراخان الحكومية",
+            en: "Astrakhan State University",
+        },
+        city: { ar: "أستراخان", en: "Astrakhan" },
+        logo:"/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "kabardino-balkarian-university",
+        name: {
+            ar: "جامعة كاباردينو–بالكاريا الحكومية",
+            en: "Kabardino-Balkarian State University",
+        },
+        city: { ar: "نالشيك", en: "Nalchik" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "leti-university",
+        name: {
+            ar: "جامعة سانت بطرسبرغ الكهروتقنية (LETI)",
+            en: "Saint Petersburg Electrotechnical University LETI",
+        },
+        city: { ar: "سانت بطرسبرغ", en: "Saint Petersburg" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+    },
+    {
+        slug: "ufa-aviation-university",
+        name: {
+            ar: "جامعة أوفا التقنية للطيران",
+            en: "Ufa State Aviation Technical University",
+        },
+        city: { ar: "أوفا", en: "Ufa" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+        },
+        {
+        slug: "tambov-technical-university",
+        name: {
+            ar: "جامعة تامبوف التقنية الحكومية",
+            en: "Tambov State Technical University",
+        },
+        city: { ar: "تامبوف", en: "Tambov" },
+        logo: "/flags/russia.png",
+        icon: CiLocationOn,
+        },
+        {
+    slug: "pacific-national-university",
+    name: {
+        ar: "جامعة باسيفيك الوطنية",
+        en: "Pacific National University",
+    },
+    city: { ar: "خاباروفسك", en: "Khabarovsk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+    },
+    {
+    slug: "amur-state-university",
+    name: {
+        ar: "جامعة آمور الحكومية",
+        en: "Amur State University",
+    },
+    city: { ar: "بلاغوفيشتشينسك", en: "Blagoveshchensk" },
+    logo: "/flags/russia.png",
+    icon: CiLocationOn,
+    },
+
+];
