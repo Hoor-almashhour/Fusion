@@ -20,7 +20,7 @@ export default function LogoSlider({ lang }: Props) {
         transition={{
           repeat: Infinity,
           ease: "linear",
-          duration: 35,
+          duration: 45,
         }}
       >
         {logos.map((u, idx) => (
