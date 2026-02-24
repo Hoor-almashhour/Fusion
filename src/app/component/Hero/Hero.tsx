@@ -17,8 +17,8 @@ const Hero = () => {
        ">
 
         {/* Image */}
-        <div className="md:w-1/2 flex justify-center my-5 ">
-          <img src="/Hero/heroImg.png"
+        <div className="md:w-1/2 flex justify-center my-6 ">
+          <img src="/Hero/heroImg.webp"
            alt="Student" className='w-lg h-4/5  ' />
         </div>
 

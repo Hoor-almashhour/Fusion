@@ -14,10 +14,10 @@ export default function CountryPage() {
     <div className="mb-4" >
 
       <section dir={locale === "ar" ? "rtl" : "ltr"} className="flex flex-col md:flex-row-reverse items-center justify-between min-h-[100vh]  px-3 md:px-[130px] py-28 mb-4 bg-gray-50 text-primary font-sans">
-  
-          <div className="md:w-1/2 flex justify-center my-5 ">
+
+          <div className="md:w-3/4 flex justify-center my-6">
                 <img
-                  src="/Hero/heroImg.png"
+                  src="/Hero/heroImg.webp"
                   alt="Student"
                   className='w-lg h-4/5 '
                 />
